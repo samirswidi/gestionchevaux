@@ -1,0 +1,14 @@
+-- Désactiver les contraintes de clé étrangère temporairement
+EXEC sp_MSforeachtable @command1 = "ALTER TABLE ? NOCHECK CONSTRAINT ALL"
+
+-- Générer et exécuter les commandes DROP TABLE pour chaque table
+DECLARE @sql NVARCHAR(MAX) = N'';
+SELECT @sql += N'DROP TABLE ' + QUOTENAME(s.name) + '.' + QUOTENAME(t.name) + ';'
+FROM sys.tables t
+INNER JOIN sys.schemas s ON t.schema_id = s.schema_id;
+
+-- Exécuter la commande générée
+EXEC sp_executesql @sql;
+
+-- Réactiver les contraintes de clé étrangère
+EXEC sp_MSforeachtable @command1 = "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT ALL"

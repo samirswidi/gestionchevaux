@@ -1,0 +1,1758 @@
+{
+    "menu": {
+        "home": "الصفحة الرئيسية",
+        "dashboard": "لوحة التحكم",
+        "calendar": "التقويم",
+        "horses": "الخيول",
+        "horse_management": "إدارة الخيول",
+        "horse_list": "قائمة الخيول",
+        "add_horse": "إضافة حصان",
+        "movement_management": "إدارة التنقلات",
+        "movement_list": "قائمة التنقلات",
+        "move_horses": "نقل الخيول",
+        "qualification_management": "إدارة المسابقات",
+        "qualification_list": "قائمة المسابقات",
+        "schedule_qualification": "جدولة المسابقات",
+        "horse_sales": "بيع الخيول",
+        "completed_sales": "المبيعات المكتملة",
+        "sell_horses": "بيع الخيول",
+        "horse_acte":"مستندات الخيول",
+        "completed_acte":"قائمة المستندات",
+        "add_acte":"إضافة مستند",
+        "prescription": "الوصفة الطبية",
+        "prescription_management": "إدارة الوصفات الطبية",
+        "prescription_list": "قائمة الوصفات الطبية",
+        "add_prescription": "إضافة وصفة طبية",
+        "category": "الفئة",
+        "category_management": "إدارة الفئات",
+        "category_list": "قائمة الفئات",
+        "add_category": "إضافة فئة",
+        "contact": "الاتصال",
+        "contact_management": "إدارة الاتصالات",
+        "contact_list": "قائمة الاتصالات",
+        "add_contact": "إضافة اتصال",
+        "contact_type_management": "إدارة أنواع الاتصال",
+        "contact_type_list": "قائمة أنواع الاتصال",
+        "add_contact_type": "إضافة نوع اتصال",
+        "breed": "السلالة",
+        "breed_management": "إدارة السلالات",
+        "breed_list": "قائمة السلالات",
+        "add_breed": "إضافة سلالة",
+        "locations": "المواقع",
+        "location_management": "إدارة المواقع",
+        "location_list": "قائمة المواقع",
+        "add_location": "إضافة موقع",
+        "ui_components": "مكونات واجهة المستخدم",
+        "form_layout": "تخطيط النموذج",
+        "input": "إدخال",
+        "button": "زر",
+        "table": "جدول",
+        "list": "قائمة",
+        "tree": "شجرة",
+        "panel": "لوحة",
+        "overlay": "تراكب",
+        "media": "وسائط",
+        "menu_component": "قائمة",
+        "message": "رسالة",
+        "file": "ملف",
+        "chart": "مخطط",
+        "timeline": "الجدول الزمني",
+        "misc": "متنوع",
+        "pages": "الصفحات",
+        "landing": "الصفحة المقصودة",
+        "auth": "المصادقة",
+        "login": "تسجيل الدخول",
+        "error": "خطأ",
+        "access_denied": "تم الرفض",
+        "crud": "CRUD",
+        "not_found": "غير موجود",
+        "empty": "فارغ",
+        "hierarchy": "التسلسل الهرمي",
+        "submenu": "قائمة فرعية",
+        "get_started": "ابدأ",
+        "documentation": "الوثائق",
+        "view_source": "عرض المصدر",
+        
+        "users":"المستخدمون",
+        "users_list":"ٌقأئمة المستخدمون"
+        
+    },
+    "style": {
+        "margin-sidebar-right": "0rem",
+        "margin-sidebar-left": "80%",
+        "layout-main-container-right": "",
+         "layout-main-container-left": ""
+    },
+    "userMenu": {
+      "greeting": "مرحباً {{nom}} {{prenom}}",
+      "role": "({{role}})",
+      "settings": "إعدادات ",
+      "edit": "تعديل",
+      "logout": "تسجيل الخروج"
+    },
+    "HorseComponent": {
+      "coats": {
+      "ALEZAN": "أشقر",
+      "BAI": "بني محمر",
+      "BAI_BRUN": "بني غامق",
+      "BLANC": "أبيض",
+      "GRIS": "رمادي",
+      "NOIR": "أسود",
+      "PIE": "أبلق",
+      "ROUAN": "أشهب",
+      "SOURIS": "فأري",
+      "AUBERE": "أشقر محمر",
+      "CREME": "كريمي",
+      "ISABELLE": "إيزابيلا",
+      "PALOMINO": "بالومينو"
+    }
+      ,
+      "anciennoms": {
+        "dialog_title": "تاريخ الأسماء",
+        "current_name": "الاسم الحالي",
+        "sire_number": "رقم SIRE",
+        "old_name": "الاسم القديم",
+        "change_date": "تاريخ التغيير",
+        "no_old_names": "لا توجد أسماء قديمة",
+        "close_button": "إغلاق",
+        "showing_current_page_report": "عرض {first} إلى {last} من {totalRecords} إدخالات"
+    },
+    "title": "قائمة الخيول",
+    "buttons": {
+      "add_horse": "إضافة حصان",
+      "add_prescription": "إضافة وصفة طبية",
+      "import_csv": "استيراد من CSV",
+      "add_document": "إضافة مستند",
+      "move_horses": "نقل الخيول",
+      "sell_horses": "بيع الخيول"
+    },
+    "number_horse":"عدد الخيول",
+    "number_horse_notarchived":"عدد الخيول غير مؤرشفة",
+    "number_horse_archived":"عدد الخيول المؤرشفة",
+    "number_acte":"عدد  المستندات",
+    "number_prescription":"عدد الوصفات الطبية",
+    "table": {
+      "sire_number": "رقم SIRE",
+      "sire_key": "مفتاح SIRE",
+      "name": "الاسم",
+      "coat": "اللون",
+      "birth_date": "تاريخ الميلاد",
+      "gender": "الجنس",
+      "archived": "مؤرشف",
+      "actions": "الإجراءات",
+      "no_data": "لا توجد خيول",
+      "loading": "جاري تحميل البيانات. الرجاء الانتظار.",
+      "clear": "مسح",
+      "search": "بحث...",
+      "yes": "نعم",
+      "no": "لا"
+    },
+    "genders": {
+        "male": "ذكر",
+        "female": "أنثى"
+      }
+      ,
+      "AddHorseDialog": {
+        "selectCoat": "اختر اللون ",
+    "header": "إضافة حصان",
+    "fields": {
+      "name": "الاسم",
+      "coat": "اللون",
+      "birth_date": "تاريخ الميلاد",
+      "gender": "الجنس",
+      "father": "الأب",
+      "mother": "الأم",
+      "location": "الموقع",
+      "race_code": "رمز السلالة",
+      "category": "الفئة",
+      "contacts": "جهات الاتصال"
+    },
+    "placeholders": {
+      "select_gender": "اختر الجنس",
+      "select_father": "تحديد الأب",
+      "select_mother": "تحديد الأم",
+      "select_location": "اختر موقعًا",
+      "select_race": "اختر سلالة",
+      "select_category": "اختر فئة",
+      "select_contacts": "اختر جهات اتصال"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "add": "إضافة"
+    },
+    "genderOptions": {
+      "male": "ذكر",
+      "female": "أنثى"
+    },
+    "messages": {
+      "add_first_category": " أضف فئة جديدة ",
+      "add_first_location": " أضف مكان جديد  ",
+      "add_first_race":"أضف سلالة جديدة  ",
+      "add_first_contact":"أضف جهة إتصال جديدة"
+    }
+  },
+  "PrescriptionDialog": {
+    "header": "إضافة وصفة طبية للخيول",
+    "headersingle": "إضافة وصفة طبية لحصان معين",
+    "numbersire":" SIRE مفتاح",
+    "fields": {
+      "horses": "الخيول غير المؤرشفة",
+      "date": "التاريخ",
+      "is_sick": "هل هو مريض؟",
+      "symptoms": "الأعراض",
+      "disease": "اسم المرض",
+      "medications": "الأدوية"
+    },
+    "placeholders": {
+      "select_horses": "اختر الخيول",
+      "select_symptoms": "اختر الأعراض",
+      "select_disease": "اختر المرض",
+      "select_yes_no": "اختر",
+      "enter_medications": "أدخل الأدوية"
+    },
+    "options": {
+      "yes": "نعم",
+      "no": "لا"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "add": "إضافة"
+    }
+  },
+  "ImportDialog": {
+    "header": "استيراد خيول من ملف CSV",
+    "labels": {
+      "select_file": "اختر ملف",
+      "import": "استيراد"
+    },
+    "messages": {
+      "file_type": "يتم قبول ملفات CSV فقط",
+      "max_size": "الحد الأقصى لحجم الملف: 1 ميجابايت"
+    }
+  }
+  ,
+  "AddDocumentDialog": {
+    "header": "إضافة مستند لمجموعة من الخيول ",
+    "headersingle": "إضافة مستند لحصان معين  ",
+    "fields": {
+      "horses": "أسماء الخيول غير المؤرشفة",
+      "notes": "ملاحظات",
+      "attachments": "المرفقات",
+      "contacts": "جهات الاتصال",
+      "document_type": "نوع المستند"
+    },
+    "placeholders": {
+      "select_horses": "اختر الخيول",
+      "enter_notes": "أدخل ملاحظات",
+      "select_contacts": "اختر جهات الاتصال",
+      "select_document_type": "اختر نوع المستند"
+    },
+    "buttons": {
+      "add": "إضافة",
+      "choosefile":"إختر الملفات",
+      "cancelfile":"إلغاء إختيار الملفات"
+    }
+  },
+  "DynamicFormDialog": {
+    "header": "ملء المعلومات الإضافية",
+    "fields": {
+      "acteId": "معرف المستند",
+      "documentType": "نوع المستند",
+      "healthAnalysis": "التحاليل الصحية",
+      "planning": "التخطيط",
+      "result": "النتيجة",
+      "analysisType": "نوع التحليل",
+      "analysisDate": "تاريخ التحليل",
+      "viewType": "نوع العرض",
+      "filters": "الفلاتر",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية"
+    },
+    "documentTypes": {
+      "healthAnalysis": "التحاليل الصحية",
+      "planning": "التخطيط"
+    },
+    "buttons": {
+      "submit": "إرسال"
+    }
+  },
+  "MoveHorsesDialog": {
+    "header": "نقل الخيول",
+    "fields": {
+      "horses": "الخيول المراد نقلها (غير مؤرشفة)",
+      "carrier": "الناقل",
+      "departure": "تاريخ ووقت المغادرة",
+      "arrival": "تاريخ ووقت الوصول",
+      "conditions": "الشروط",
+      "departure_location": "موقع المغادرة",
+      "arrival_location": "موقع الوصول"
+    },
+    "placeholders": {
+      "select_horses": "اختر الخيول",
+      "enter_carrier": "أدخل اسم الناقل",
+      "enter_conditions": "أدخل الشروط"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "add": "إضافة"
+    }
+  },
+  "SellHorsesDialog": {
+    "header": "بيع الخيول",
+    "fields": {
+      "horses": "الخيول المعروضة للبيع (غير مؤرشفة وغير مباعة)",
+      "prices": "تحديد الأسعار",
+      "buyer": "المشتري",
+      "payment_method": "طريقة الدفع",
+      "notes": "ملاحظات"
+    },
+    "placeholders": {
+      "select_horses": "اختر الخيول",
+      "enter_buyer": "أدخل اسم المشتري",
+      "enter_notes": "أدخل ملاحظات",
+      "select_payment": "اختر طريقة الدفع"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "create_invoice": "إنشاء الفاتورة"
+    },
+    "messages": {
+      "add":
+      {
+        "success":"تم بيع الخيول بنجاح",
+        "error":"خطأ أثناء بيع الخيول",
+        "cancel":"تم إلغاء البيع"
+      },
+      "no_horses": {
+        "title": "لا توجد خيول متاحة للبيع",
+        "description": "جميع الخيول مؤرشفة أو تم بيعها بالفعل."
+      },
+      "close": "إغلاق"
+    },
+    "payment_options": {
+      "cash": "نقداً",
+      "check": "شيك",
+      "transfer": "حوالة بنكية",
+      "card": "بطاقة ائتمان"
+    }
+  }
+  ,
+  "messages": {
+    "delete": {
+        "title":"حذف",
+      "confirm": "هل تريد حقًا حذف هذا الحصان؟",
+      "header": "تأكيد الحذف",
+      "success": "تم حذف الحصان بنجاح",
+      "error": "خطأ أثناء حذف الحصان",
+      "cancel": "تم إلغاء الحذف"
+    },
+    "add":
+    {
+       "title":"إضافة",
+"success": "تم إضافة الحصان بنجاح",
+      "error": "خطأ أثناء إضافة الحصان",
+      "cancel": "تم إلغاء إضافة الحصان"
+    },
+    "edit": {
+       "title":"تعديل",
+      "success": "تم تعديل الحصان بنجاح",
+      "error": "خطأ أثناء تعديل الحصان"
+    },
+    "archive": {
+        "title":"أرشفة",
+      "confirm": "هل تريد حقًا أرشفة هذا الحصان؟",
+      "header": "تأكيد الأرشفة",
+      "success": "تم أرشفة الحصان بنجاح",
+      "error": "خطأ أثناء أرشفة الحصان",
+      "cancel": "تم إلغاء الأرشفة"
+    },
+    "restore": {
+        "title":"إستعادة",
+      "confirm": "هل تريد حقًا استعادة هذا الحصان؟",
+      "header": "تأكيد الاستعادة",
+      "success": "تم استعادة الحصان بنجاح",
+      "error": "خطأ أثناء استعادة الحصان",
+      "cancel": "تم إلغاء الاستعادة"
+    },
+    "sell":
+    {
+      "title":"حصان تم بيعه " 
+    },
+    "invalid_request": "طلب غير صالح",
+    "horse_not_found": "لم يتم العثور على الحصان"
+  },
+  "EditHorseDialog": {
+    "header": "تعديل الحصان",
+    "fields": {
+      "sireNumber": "رقم SIRE",
+      "name": "الاسم",
+      "coat": "اللون",
+      "birthDate": "تاريخ الميلاد",
+      "gender": "الجنس",
+      "location": "الموقع",
+      "raceCode": "رمز السلالة",
+      "category": "الفئة",
+      "contacts": "جهات الاتصال"
+    },
+    "placeholders": {
+      "selectGender": "اختر الجنس",
+      "selectLocation": "اختر موقعًا",
+      "selectRace": "اختر سلالة",
+      "selectCategory": "اختر فئة",
+      "selectContacts": "اختر جهات الاتصال"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "save": "تعديل"
+    }
+  }
+  },
+  "calendar": {
+    "today": "اليوم",
+    "month": "شهر",
+    "week": "أسبوع",
+    "day": "يوم",
+    "allDay": "طوال اليوم",
+    "more": "المزيد",
+    "noEvents": "لا توجد أحداث لعرضها",
+    "eventTypes": {
+      "mouvement": "نقل",
+      "qualification": "مسابقة"
+    },
+    "dialog": {
+      "edit": "تعديل الحدث",
+      "new": "حدث جديد",
+      "eventType": "نوع الحدث",
+      "eventTypes": {
+        "mouvement": "نقل",
+        "qualification": "مسابقة"
+      },
+      "fieldsmouvement": {
+        "raison": "السبب",
+        "transporteur": "الناقل",
+        "dateHeureDepart": "تاريخ/وقت المغادرة",
+        "dateHeureArrivee": "تاريخ/وقت الوصول",
+        "lieuDepart": "مكان المغادرة",
+        "lieuArrivee": "مكان الوصول",
+        "chevaux": "الخيول",
+        "conditions": "شروط خاصة",
+        "nom": "الاسم"
+        
+      },
+      "fieldsqualification": {
+          "nom": "الاسم",
+          "dateHeureDepart": "تاريخ/وقت المغادرة",
+          "dateHeureArrivee": "تاريخ/وقت الوصول",
+          "lieuDepart": "مكان المغادرة",
+          "lieuArrivee": "مكان الوصول",
+          "chevaux": "الخيول",
+          "distances": "المسافة (متر)"
+        },
+      "buttons": {
+        "save": "حفظ",
+        "cancel": "إلغاء",
+        "delete": "حذف"
+      }
+    }
+  },
+  "error": {
+    "forbidden": {
+      "title": "ممنوع",
+      "message": "الوصول إلى هذا المورد مرفوض",
+      "permission_manager": "مدير الأذونات",
+      "unauthorized": "غير مصرح لك بمشاهدة هذه الصفحة"
+    }
+  },
+  "Mouvement": {
+    "title_mouvement":"قائمة التنقلات",
+    "number_mouvement":"عدد التنقلات",
+    "table": {
+        "clear_filters": "مسح",
+        "export_excel": "إكسل",
+        "export_pdf": "PDF",
+        "export_csv": "CSV",
+        "search_placeholder": "بحث...",
+        "filter_placeholder_id": "تصفية حسب المعرف",
+        "filter_placeholder_transporter": "تصفية حسب الناقل",
+        "filter_placeholder_date": "تصفية حسب التاريخ",
+        "filter_placeholder_conditions": "تصفية حسب الشروط",
+        "filter_placeholder_location": "تصفية حسب الموقع",
+        "filter_placeholder_reason": "تصفية حسب السبب",
+        "headers": {
+            "id": "المعرف",
+            "transporter": "الناقل",
+            "departure_date": "تاريخ المغادرة",
+            "arrival_date": "تاريخ الوصول",
+            "conditions": "الشروط",
+            "departure_location": "موقع المغادرة",
+            "arrival_location": "موقع الوصول",
+            "sire_number": "رقم SIRE",
+            "add_date": "تاريخ الإضافة",
+            "reason": "السبب",
+            "actions": "الإجراءات"
+        },
+        "actions": {
+            "delete": "حذف",
+            "edit": "تعديل"
+        },
+        "not_authorized": "غير مصرح لك بتنفيذ الإجراءات!",
+        "no_data": "لا توجد حركات",
+        "loading_data": "جاري تحميل البيانات. الرجاء الانتظار."
+    },
+    "add_title": "إضافة نقل",
+    "edit_title": "تعديل النقل",
+    "delete_confirmation": "هل تريد حقاً حذف هذا النقل؟",
+    "delete_header": "تأكيد الحذف",
+    "Common": {
+    "yes": "نعم",
+    "no": "لا"
+              }
+    ,
+    "add_success": "تمت إضافة النقل بنجاح",
+    "add_error": "خطأ أثناء إضافة النقل",
+    "fields": {
+      "horses": "الخيول",
+      "carrier": "الناقل",
+      "departure": "تاريخ ووقت المغادرة",
+      "arrival": "تاريخ ووقت الوصول",
+      "conditions": "ظروف النقل",
+      "reason":"سبب النقل",
+     
+      "departure_location": "مكان المغادرة",
+      "arrival_location": "مكان الوصول"
+    },
+    "placeholders": {
+      "select_horses": "اختر الخيول",
+      "enter_carrier": "أدخل اسم الناقل",
+      "enter_conditions": "صف ظروف النقل",
+      "enter_reason":" أدخل سبب النقل"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "add": "إضافة",
+      "save": "حفظ"
+    } ,
+    "messages":{
+      "successadd":" تم إضافة النقل بنجاح",
+      "erroradd":"خطأ أثناء إضافة النقل  ",
+      "successedit":" تم تعديل النقل بنجاح",
+      "erroredit":"خطأ أثناء تعديل النقل",
+      "successdelete":"تم مسح النقل بنجاح",
+      "errordelete":"خطأ أثناء مسح النقل",
+      "cancel":"تم إلغاء المسح",
+      "warning":"Informations"
+    }
+  }
+ ,
+  "Qualification": {
+    "number_qualification":"عدد المسابقات",
+    "delete_confirmation": {
+      "message": "هل أنت متأكد أنك تريد حذف التأهيل \"{{name}}\"؟",
+      "header": "تأكيد",
+      "success": "تم حذف التهيئة بنجاح",
+      "error": "فشل الحذف",
+      "mouvement_message": "هل أنت متأكد أنك تريد حذف هذه الحركة؟",
+    "qualification_message": "هل أنت متأكد أنك تريد حذف هذا التأهيل؟",
+   
+    "mouvement_success": "تم حذف الحركة بنجاح",
+    "qualification_success": "تم حذف التهيئة بنجاح",
+    "mouvement_error": "فشل حذف الحركة",
+    "qualification_error": "فشل حذف التهيئة"
+    },
+    "manage_rang_horse": {
+      "header": "إدارة مراتب الخيول",
+      "headers": {
+        "sire": "SIRE",
+        "rank": "المرتبة",
+        "firstPlace": "المركز الأول",
+        "secondPlace": "المركز الثاني",
+        "thirdPlace": "المركز الثالث",
+        "actions": "الإجراءات"
+      },
+      "buttons": {
+        "save": "حفظ",
+        "finalize": "إنهاء"
+      },
+      "message":{
+        "updaterangsuccess":"تم تحديث المرتبة",
+        "updaterangerror":"خطأ أثناء تحديث المرتبة",
+        "finaliser":"تم إنهاء و تأكيد المسابقة",
+        "notfound":"الرجاء إختيار مسابقة"
+      }
+    },
+    "details_dialog": {
+      "header": "تفاصيل التأهيل",
+      "fields": {
+        "id": "المعرف",
+        "name": "الاسم",
+        "startDate": "تاريخ البداية",
+        "endDate": "تاريخ النهاية",
+        "distance": "المسافة",
+        "departureLocation": "مكان المغادرة",
+        "arrivalLocation": "مكان الوصول",
+        "horsesCount": "عدد الخيول"
+      },
+      "horsesTable": {
+        "title": "تفاصيل الخيول المشاركة",
+        "headers": {
+          "horseName": "اسم الحصان",
+          "sire": "SIRE",
+          "rank": "المرتبة",
+          "firstPlace": "المركز الأول",
+          "secondPlace": "المركز الثاني",
+          "thirdPlace": "المركز الثالث"
+        },
+        "noData": "لا توجد تفاصيل متاحة للخيول"
+      },
+      "buttons": {
+        "close": "إغلاق",
+        "exportPDF": "تصدير PDF"
+      }
+    },
+    "stats_dialog": {
+      "header": "إحصائيات الحصان",
+      "fields": {
+        "maxRanks": "الحد الأقصى لعدد المراتب لعرضها",
+        "horseName": "الحصان: {{horseName}}"
+      },
+      "buttons": {
+        "excel": "إكسل",
+        "pdf": "PDF",
+        "csv": "CSV",
+        "close": "إغلاق"
+      },
+      "table": {
+        "headers": {
+          "rank": "المرتبة",
+          "count": "عدد المرات"
+        }
+      }
+    },
+    "Table": {
+      "caption": {
+        "clear": "مسح",
+        "exportExcel": "إكسل",
+        "exportPDF": "PDF",
+        "exportCSV": "CSV",
+        "search": "بحث..."
+      },
+      "headers": {
+        "id": "المعرف",
+        "name": "الاسم",
+        "startDate": "تاريخ البداية",
+        "endDate": "تاريخ النهاية",
+        "distance": "المسافة (م)",
+        "departureLocation": "مكان المغادرة",
+        "arrivalLocation": "مكان الوصول",
+        "horses": "الخيول (SIRE)",
+        "actions": "الإجراءات"
+      },
+      "messages": {
+        "noQualifications": "لا توجد مؤهلات",
+        "loading": "جاري تحميل المؤهلات. الرجاء الانتظار.",
+        "notAuthorized": "غير مصرح لك بتنفيذ الإجراءات!"
+      },
+      "buttons": {
+        "view": "عرض",
+        "edit": "تعديل",
+        "delete": "حذف",
+        "manageHorses": "إدارة الخيول"
+      }
+    }
+    ,
+    "title_component":"قائمة المسابقات",
+    "add_title": "إضافة مسابقة",
+    "edit_title": "تعديل التأهيل",
+    "add_success": "تمت إضافة المسابقة بنجاح",
+    "add_error": "خطأ أثناء إضافة المسابقة",
+    
+    "edit_success":"تم تعديل المسابقة بنجاح",
+    "edit_error":"خطأ أثناء تعديل المسابقة بنجاح",
+    "fields": {
+      "name": "اسم المسابقة",
+      "start_date": "تاريخ البدء",
+      "end_date": "تاريخ الانتهاء",
+      "distance": "المسافة (متر)",
+      "departure_location": "مكان المغادرة",
+      "arrival_location": "مكان الوصول",
+      "horses": "الخيول المشاركة"
+    },
+    "placeholders": {
+      "name": "أدخل اسم المسابقة",
+      "select_horses": "اختر الخيول"
+    },
+    "buttons": {
+      "add": "إضافة المسابقة",
+      "cancel": "إلغاء",
+      "save": "حفظ",
+      "edit":"تعديل المسابقة "
+    }
+  },
+  "Facture": {
+    "number_facture":"عدد المبيعات",
+    "invoiceTable": {
+    "caption": {
+      "clear": "مسح",
+      "exportExcel": "إكسل",
+      "exportCSV": "CSV",
+      "search": "بحث..."
+    },
+    "headers": {
+      "id": "المعرف",
+      "invoiceNumber": "رقم الفاتورة",
+      "date": "التاريخ",
+      "buyer": "المشتري",
+      "amountHT": "المبلغ بدون ضريبة (د.ت)",
+      "vat": "ضريبة القيمة المضافة (د.ت)",
+      "amountTTC": "المبلغ مع الضريبة (د.ت)",
+      "paymentMethod": "طريقة الدفع",
+      "horses": "الخيول (SIRE)",
+      "actions": "الإجراءات"
+    },
+    "messages": {
+      "noInvoices": "لا توجد فواتير.",
+      "loading": "جاري تحميل الفواتير. الرجاء الانتظار."
+    },
+    "buttons": {
+      "view": "عرض",
+      "edit": "تعديل",
+      "delete": "حذف"
+    }
+  }
+  ,
+    "title_component":"قائمة المبيعات ",
+    "add_title": "إنشاء فاتورة بيع",
+    "edit_title": "التعديل على فاتورة البيع",
+    "add_success": "تم إنشاء الفاتورة بنجاح",
+    "add_error": "خطأ أثناء إنشاء الفاتورة",
+    "no_horses_available": "لا توجد خيول متاحة للبيع",
+    "fields": {
+      "horses": "الخيول المعروضة للبيع",
+      "prices": "أسعار الخيول",
+      "buyer": "المشتري",
+      "payment_method": "طريقة الدفع",
+      "notes": "ملاحظات",
+      "existhorses":"قائمة الخيول الموجودة",
+      "newchoosedhorses":"قائمة الخيول الجديدة"
+    },
+    "placeholders": {
+      "select_horses": "اختر الخيول",
+      "enter_buyer": "أدخل اسم المشتري",
+      "enter_notes": "أدخل ملاحظات إضافية"
+    },
+    "buttons": {
+      "create": "إنشاء الفاتورة",
+      "cancel":"إلغاء",
+      "edit":"تعديل"
+    },
+    "tabs": {
+        "completed_sales": "المبيعات المكتملة",
+        "new_sale": "بيع جديد"
+    },
+    "add_facture":{
+      "succes":"success",
+      "detail":"تم إنشاء فاتورة بنجاح",
+      "error":"خطأ أثناء إنشاء الفاتورة",
+      
+      "detailprice": "كل الخيول يجب أن يكون لها ثمن بيع"
+    },
+    "update_facture":{
+      "succes":"success",
+      "detail":"تم التعديل على فاتورة بنجاح",
+      "error":"خطا أثناء التعديل الفاتورة"
+    },
+    "delete_facture":{
+      "succes":"success",
+      "detail":"تم فسخ الفاتورة بنجاح",
+      "error":"خطأ أثناء فسخ الفاتورة",
+      "deleteConfirmation": {
+      "message": "هل أنت متأكد أنك تريد حذف هذه الفاتورة \"{{invoiceNumber}}\"؟",
+      "header": "تأكيد",
+      "success": "تم حذف الفاتورة بنجاح",
+      "error": "فشل في حذف الفاتورة"
+    }
+    }
+  },
+  "Contact": {
+    "number_contact":"عدد جهات الإتصال",
+      "table": {
+        "sousContact": {
+          "title": "قائمة جهات الاتصال",
+          "buttons": {
+            "addContact": "إضافة جهة اتصال",
+            "addType": "إضافة نوع جهة اتصال",
+            "clear": "مسح",
+            "excel": "إكسل",
+            "pdf": "PDF",
+            "csv": "CSV"
+          },
+          "columns": {
+            "id": "المعرف",
+            "firstName": "الاسم الأول",
+            "lastName": "الاسم الأخير",
+            "coordinates": "إحداثيات",
+            "contactType": "نوع جهة الاتصال",
+            "actions": "إجراءات"
+          },
+          "search": {
+            "placeholder": "بحث...",
+            "byId": "البحث بالمعرف",
+            "byLastName": "البحث بالاسم الأخير",
+            "byFirstName": "البحث بالاسم الأول",
+            "byCoordinates": "البحث بالإحداثيات",
+            "byType": "البحث بالنوع"
+          },
+          "messages": {
+            "empty": "لم يتم العثور على جهات اتصال",
+            "loading": "جاري تحميل بيانات جهات الاتصال. الرجاء الانتظار.",
+            "unauthorized": "غير مصرح لك بتنفيذ الإجراءات!"
+          }
+        }
+      }
+    
+    ,
+    "add_title": "إضافة جهة اتصال جديدة",
+    "add_success": "تمت إضافة جهة الاتصال بنجاح",
+    "add_error": "خطأ أثناء إضافة جهة الاتصال",
+    "fields": {
+      "last_name": "الاسم العائلي",
+      "first_name": "الاسم الشخصي",
+      "contact_info": "  معلومات الإتصال (رقم الهاتف أو البريد الإكتروني )",
+      "contact_type": "نوع جهة الاتصال"
+    },
+    "placeholders": {
+      "enter_last_name": "أدخل الاسم العائلي",
+      "enter_first_name": "أدخل الاسم الشخصي",
+      "enter_contact_info": " أدخل معلومات الإتصال (رقم الهاتف أو البريد الإكتروني )",
+      "select_contact_type": "اختر نوع جهة الاتصال"
+    },
+    "buttons": {
+      "add": "إضافة جهة اتصال",
+      "cancel": "إلغاء"
+    },
+    "validation": {
+      "required": "هذا الحقل مطلوب",
+      "invalid_contact_info": "تنسيق معلومات الاتصال غير صالح"
+    }
+  },
+ "Typecontact": {
+  "number_typecontact":"عدد التخصصات",
+  "table": {
+    "sousTypecontact": {
+      "title": "قائمة أنواع الاتصال",
+      "addButton": "إضافة نوع اتصال",
+      "clearButton": "مسح",
+      "searchPlaceholder": "بحث...",
+      "export": {
+        "excel": "إكسل",
+        "pdf": "PDF",
+        "csv": "CSV"
+      },
+      "columns": {
+        "id": "المعرف",
+        "type": "النوع",
+        "actions": "الإجراءات"
+      },
+      "emptyMessage": "لم يتم العثور على أي نوع اتصال.",
+      "loadingMessage": "جاري تحميل بيانات أنواع الاتصال. الرجاء الانتظار.",
+      "unauthorized": "غير مصرح لك بتنفيذ الإجراءات!",
+      "deleteTooltip": "حذف",
+      "editTooltip": "تعديل"
+    }
+  }
+  ,
+    "add_title": "إضافة تخصص جديد",
+    "modif_title": "تعديل تخصص جديد",
+    "add_success": "تمت إضافة التخصص الجديد بنجاح",
+    "add_error": "خطأ أثناء إضافة تخصص جديد",
+    "fields": {
+      "type": "تخصص جديد"
+    },
+    "placeholders": {
+      "type": "اكتب التخصص الجديد"
+    },
+    "buttons": {
+      "add": "إضافة تخصص جديد",
+      "edit": "تعديل التخصص",
+      "cancel": "إلغاء"
+    },
+    "validation": {
+      "required": "هذا الحقل مطلوب",
+      "invalid_contact_info": "تنسيق معلومات الاتصال غير صالح"
+    },
+    "delete": {
+    "confirmation": {
+      "message": "هل تريد حقًا حذف نوع الاتصال هذا؟",
+      "header": "تأكيد الحذف",
+      "acceptLabel": "نعم",
+      "rejectLabel": "لا"
+    },
+    "messages": {
+      "success": "تم حذف نوع الاتصال بنجاح",
+      "error": "حدث خطأ أثناء حذف نوع الاتصال",
+      "canceled": "تم إلغاء الحذف"
+    }
+  }
+  },
+  
+    "Lieu": {
+      "number_lieu":"عدد الأماكن",
+      "Table": {
+    "title": "قائمة الأماكن",
+    "columns": {
+      "id": "المعرف",
+      "nom": "الاسم",
+      "ville": "المدينة",
+      "codePostal": "الرمز البريدي",
+      "type": "النوع",
+      "capaciteMax": "السعة",
+      "actions": "الإجراءات"
+    },
+    "filters": {
+      "search": "بحث...",
+      "searchById": "البحث بالمعرف",
+      "searchByName": "البحث بالاسم",
+      "searchByCity": "البحث بالمدينة",
+      "searchByPostalCode": "البحث بالرمز البريدي",
+      "searchByType": "البحث بالنوع",
+      "filterByCapacity": "تصفية حسب السعة"
+    },
+    "buttons": {
+      "clear": "مسح",
+      "excel": "إكسل",
+      "pdf": "PDF",
+      "csv": "CSV",
+      "delete": "حذف",
+      "edit": "تعديل",
+      "details": "تفاصيل"
+    },
+    "messages": {
+      "noData": "لا توجد أماكن",
+      "loading": "جاري تحميل بيانات الأماكن. الرجاء الانتظار.",
+      "unauthorized": "غير مصرح لك بتنفيذ الإجراءات!"
+    }
+  },
+      "list_lieu":"قائمة الأماكن",
+      "add_title": "إضافة مكان جديد",
+      "add_success": "تمت إضافة المكان الجديد بنجاح",
+      "add_error": "خطأ أثناء إضافة المكان الجديد",
+      "fields": {
+        "nom": "اسم المكان",
+        "adresse": "العنوان",
+        "ville": "المدينة",
+        "codePostal": "الرمز البريدي",
+        "type": "نوع المكان",
+        "capaciteMax": "السعة القصوى",
+       "longueur": "الطول بالمتر",
+        "largeur":"العرض بالمتر",
+        "installations": "المرافق",
+        "parentLieuId": "المكان الرئيسي",
+        "estimationencours":"جاري تقدير الأبعاد...",
+        "dimensionsestime":"الأبعاد المقدرة"
+      },
+      "placeholders": {
+        "nom": "أدخل اسم المكان",
+        "adresse": "أدخل العنوان",
+        "ville": "أدخل المدينة",
+        "codePostal": "أدخل الرمز البريدي",
+        "type": "اختر النوع",
+        "capaciteMax": "أدخل السعة",
+        "longueur": "الطول بالمتر",
+        "largeur":"العرض بالمتر",
+        "installations": "صف المرافق",
+        "parentLieuId": "اختر المكان الرئيسي"
+      },
+      "buttons": {
+        "add": "إضافة مكان",
+        "cancel": "إلغاء",
+        "edit":"تعديل"
+      },
+      "validation": {
+        "required": "هذا الحقل مطلوب",
+        "invalid_format": "تنسيق غير صالح"
+      },
+      "types": {
+        "Ecurie": "إسطبل",
+        "Paddock": "حظيرة",
+        "Manege": "ساحة ركوب",
+        "Carriere": "منطقة تدريب",
+        "Hangar": "حظيرة",
+        "Bureau": "مكتب"
+      },
+      "deleteConfirmation": "هل أنت متأكد أنك تريد حذف هذا المكان؟",
+      "deleteConfirmationHeader": "تأكيد الحذف",
+      "deleteSuccess": "تم حذف المكان بنجاح",
+      "deleteError": "خطأ أثناء حذف المكان",
+      "deleteCancelled": "تم إلغاء الحذف",
+      "ajoutSuccess": "تم إضافة المكان بنجاح",
+      "ajoutError": "خطأ أثناء إضافة المكان",
+      "ajoutCancelled": "تم إلغاء الإضافة",
+      "modifTitle": "تعديل المكان",
+      "modifSuccess": "تم تحديث المكان بنجاح",
+      "modifError": "خطأ أثناء تحديث المكان",
+      "modifCancelled": "تم إلغاء التحديث",
+      "modifConfirmation": "هل أنت متأكد أنك تريد حفظ هذه التغييرات؟",
+      "modifConfirmationHeader": "تأكيد التحديث"
+      ,
+      "Common": {
+            "yes": "نعم",
+            "no": "لا"
+           
+                }
+      ,
+      "details": {
+    "title": "تفاصيل المكان",
+    "sections": {
+      "basicInfo": "المعلومات الأساسية",
+      "location": "الموقع"
+    },
+    "fields": {
+      "name": "الاسم",
+      "type": "النوع",
+      "capacity": "السعة",
+      "dimensions": "الأبعاد",
+      "facilities": "المرافق",
+      "address": "العنوان",
+      "city": "المدينة",
+      "postalCode": "الرمز البريدي",
+      "parentPlace": "المكان الرئيسي"
+    },
+    "notSpecified": "غير محدد",
+    "none": "لا يوجد",
+    "buttons": {
+      "close": "إغلاق"
+    }
+  }
+    },
+    "Race": {
+      "number_race":"عدد السلالات",
+  "list_title": "قائمة السلالات",
+  "buttons": {
+    "add_race": "إضافة سلالة",
+    "add_horse": "إضافة حصان",
+    "clear": "مسح",
+    "excel": "إكسل",
+    "pdf": "PDF",
+    "csv": "CSV",
+    "delete": "حذف",
+    "edit": "تعديل"
+  },
+  "table": {
+    "columns": {
+      "id": "المعرف",
+      "type": "النوع",
+      "actions": "الإجراءات"
+    },
+    "filters": {
+      "search": "بحث...",
+      "search_by_id": "البحث بالمعرف",
+      "search_by_type": "البحث بالنوع"
+    },
+    "messages": {
+      "no_data": "لا توجد سلالات",
+      "loading": "جاري تحميل بيانات السلالات. الرجاء الانتظار.",
+      "unauthorized": "غير مصرح لك بتنفيذ الإجراءات!"
+    }
+  },
+  "add_race": {
+    "title": "إضافة سلالة",
+    "fields": {
+      "race": "السلالة"
+    },
+    "placeholders": {
+      "race": "أدخل السلالة"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "add": "إضافة"
+    },
+    "added":
+    {
+      "success":"تم إضافة سلالة جديدة بنجاح",
+      "error":"خطأ أثناء إضافة سلالة جديدة "
+    }
+  },
+  "edit_race": {
+    "title": "تعديل السلالة",
+    "fields": {
+      "race": "السلالة"
+    },
+    "placeholders": {
+      "race": "أدخل السلالة"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "update": "تحديث"
+    },
+    "messages": {
+      "success": "تم تحديث السلالة بنجاح",
+      "error": "خطأ أثناء تحديث السلالة"
+    }
+  },
+  "delete_race": {
+    "confirmation": {
+      "message": "هل أنت متأكد أنك تريد حذف هذه السلالة؟",
+      "header": "تأكيد الحذف"
+    },
+    "buttons": {
+      "accept": "نعم",
+      "reject": "لا"
+    },
+    "messages": {
+      "success": "تم حذف السلالة بنجاح",
+      "error": "خطأ أثناء حذف السلالة",
+      "cancelled": "تم إلغاء الحذف"
+    }
+  },
+  "Success": "نجاح",
+  "Error": "خطأ",
+  "Cancelled": "ملغى"
+},
+"categorie": {
+  "title":"قائمة الفئات",
+  "number_categorie":" عدد الفئات",
+    "add_title":"إضافة فئة جديدة",
+    "edit_title":"التعديل على فئة",
+    "table": {
+      "buttons": {
+        "clear": "مسح",
+        "excel": "إكسل",
+        "pdf": "PDF",
+        "csv": "CSV"
+      },
+      "columns": {
+        "id": "المعرف",
+        "nameFr": "الاسم (فرنسي)",
+        "nameEn": "الاسم (إنجليزي)",
+        "isPublic": "عامة",
+        "addDate": "تاريخ الإضافة",
+        "actions": "إجراءات"
+      },
+      "filters": {
+        "search": "بحث...",
+        "byId": "البحث بالمعرف",
+        "byNameFr": "البحث بالاسم الفرنسي",
+        "byNameEn": "البحث بالاسم الإنجليزي",
+        "byStatus": "تصفية حسب الحالة",
+        "byDate": "البحث حسب التاريخ"
+      },
+      "status": {
+        "yes": "نعم",
+        "no": "لا"
+      },
+      "messages": {
+        "empty": "لم يتم العثور على فئات",
+        "loading": "جاري تحميل بيانات الفئات. الرجاء الانتظار.",
+        "unauthorized": "غير مصرح لك بتنفيذ الإجراءات!"
+      }
+    },
+    "AddcategoryDialog": {
+      "header": "إضافة فئة",
+      "headeredit": "تحديث فئة",
+      "fields": {
+        "nameFr": {
+          "label": "الاسم بالفرنسية",
+          "placeholder": "أدخل الاسم بالفرنسية"
+        },
+        "nameEn": {
+          "label": "الاسم بالإنجليزية",
+          "placeholder": "أدخل الاسم بالإنجليزية"
+        },
+        "parent": {
+          "label": "الفئة الرئيسية",
+          "placeholder": "اختر الفئة الرئيسية"
+        },
+        "subcategories": {
+          "label": "الفئات الفرعية",
+          "placeholder": "اختر الفئات الفرعية"
+        },
+        "isPublic": {
+          "label": "عامة؟",
+          "placeholder": "اختر",
+          "options": {
+            "yes": "نعم",
+            "no": "لا"
+          }
+        }
+      },
+      "buttons": {
+        "cancel": "إلغاء",
+        "submit": "إضافة",
+        "edit":"تعديل"
+      }
+    }
+  },
+  
+"ordonnance": {
+  "number_ordonnance":"عدد الوصفات الطبية",
+      "messages": {
+        "success": {
+          "add": "تمت إضافة الوصفة الطبية بنجاح",
+          "update": "تم تحديث الوصفة الطبية بنجاح",
+          "delete": "تم حذف الوصفة الطبية بنجاح"
+        },
+        "error": {
+          "add": "خطأ في إضافة الوصفة الطبية",
+          "update": "خطأ في تحديث الوصفة الطبية",
+          "delete": "خطأ في حذف الوصفة الطبية",
+          "generic": "حدث خطأ"
+        }
+      }
+      ,
+      "title_component":"قائمة الوصفات الطبية ",
+      "dialog": {
+      "addTitle": "إضافة وصفة طبية",
+      "editTitle": "تعديل الوصفة الطبية",
+      "fields": {
+        "horses": {
+          "label": "أسماء الخيول غير المؤرشفة",
+          "placeholder": "اختر الخيول"
+        },
+        "date": {
+          "label": "التاريخ"
+        },
+        "isSick": {
+          "label": "مريض؟",
+          "placeholder": "اختر",
+          "options": {
+            "yes": "نعم",
+            "no": "لا"
+          }
+        },
+        "symptoms": {
+          "label": "الأعراض",
+          "placeholder": "اختر الأعراض"
+        },
+        "disease": {
+          "label": "اسم المرض",
+          "placeholder": "اختر المرض"
+        },
+        "medications": {
+          "label": "الأدوية"
+        }
+      },
+      "buttons": {
+        "cancel": "إلغاء",
+        "edit": "تعديل",
+        "submit": "إضافة"
+      }
+    },
+      "table": {
+        "buttons": {
+          "clear": "مسح",
+          "excel": "إكسل",
+          "pdf": "PDF",
+          "csv": "CSV"
+        },
+        "columns": {
+          "id": "المعرف",
+          "isSick": "مريض",
+          "diseaseName": "اسم المرض",
+          "symptoms": "الأعراض",
+          "medications": "الأدوية",
+          "horses": "الخيول",
+          "date": "التاريخ",
+          "actions": "الإجراءات"
+        },
+        "filters": {
+          "search": "بحث...",
+          "byId": "البحث بالمعرف",
+          "byDate": "البحث حسب التاريخ"
+        },
+        "messages": {
+          "empty": "لم يتم العثور على خيول",
+          "loading": "جاري تحميل بيانات الخيول. الرجاء الانتظار.",
+          "unauthorized": "غير مصرح لك بتنفيذ الإجراءات!"
+        }
+      },
+      "diseases": {
+        "Grippe équine": "إنفلونزا الخيول",
+        "Rhinopneumonie": "التهاب الأنف والرئة",
+        "Tétanos": "الكزاز",
+        "Anémie infectieuse équine": "فقر الدم المعدي في الخيول",
+        "Artérite virale équine": "التهاب الشرايين الفيروسي في الخيول",
+        "Piroplasmose": "البيروبلازما",
+        "Lymphangite épizootique": "التهاب الأوعية اللمفية الوبائي",
+        "Dermatophilose": "التهاب الجلد",
+        "Gourme": "الخناق",
+        "Fourbure": "التهاب الحافر",
+        "Coliques": "مغص",
+        "Laminite": "التهاب الصفيحة",
+        "Myopathie atypique": "اعتلال عضلي غير نمطي",
+        "Maladie de Lyme": "مرض لايم",
+        "Leucose équine": "ابيضاض الدم في الخيول",
+        "Encéphalomyélite équine": "التهاب الدماغ والنخاع في الخيول",
+        "Syndrome naviculaire": "متلازمة العظم السمسمي",
+        "Dermatite estivale récidivante": "التهاب الجلد الصيفي المتكرر",
+        "Paralysie à tiques": "شلل القراد"
+      },
+      "symptoms": {
+        "Fièvre": "حمى",
+        "Toux": "سعال",
+        "Écoulement nasal": "إفرازات أنفية",
+        "Difficulté respiratoire": "صعوبة في التنفس",
+        "Perte d'appétit": "فقدان الشهية",
+        "Apathie": "خمول",
+        "Raideur musculaire": "تيبس عضلي",
+        "Spasmes musculaires": "تشنجات عضلية",
+        "Difficulté à avaler": "صعوبة في البلع",
+        "Jaunisse": "يرقان",
+        "Urine foncée": "بول داكن",
+        "Gonflement des membres": "تورم الأطراف",
+        "Boiterie": "عرج",
+        "Douleur articulaire": "ألم مفصلي",
+        "Lésions cutanées": "آفات جلدية",
+        "Démangeaisons intenses": "حكة شديدة",
+        "Écoulement oculaire": "إفرازات عينية",
+        "Diarrhée": "إسهال",
+        "Coliques": "مغص",
+        "Transpiration excessive": "تعرق مفرط",
+        "Tremblements": "رعشة",
+        "Paralysie": "شلل",
+        "Perte de poids": "فقدان الوزن",
+        "Œdème": "وذمة",
+        "Saignements": "نزيف",
+        "Douleur abdominale": "ألم بطني",
+        "Déshydratation": "جفاف",
+        "Faiblesse générale": "ضعف عام",
+        "Incoordination": "عدم تناسق",
+        "Convulsions": "تشنجات"
+      }
+      ,
+    "status":{
+      "sick":"نعم",
+      "healthy":"لا"
+    },
+    "delete_ordonnance": {
+      "confirmation": {
+        "message": "هل تريد حقًا حذف هذه الوصفة الطبية؟",
+        "header": "تأكيد الحذف",
+        "accept": "نعم",
+        "reject": "لا"
+      },
+      "messages": {
+        "success": "تم حذف الوصفة الطبية بنجاح",
+        "not_found": "الوصفة الطبية المحددة غير موجودة",
+        "invalid_request": "طلب غير صالح",
+        "generic_error": "خطأ أثناء حذف الوصفة الطبية",
+        "canceled": "تم إلغاء الحذف"
+      }
+    },
+    "update_ordonnance": {
+      "messages": {
+        "success": "تم تحديث الوصفة الطبية بنجاح",
+        "generic_error": "خطأ أثناء تحديث الوصفة الطبية",
+        "invalid_sire": "لم يتم العثور على أرقام SIRE صالحة. تهيئة إلى مصفوفة فارغة."
+      }
+    },
+    "common": {
+      "success": "نجاح",
+      "error": "خطأ",
+      "canceled": "ملغى"
+    },
+    "EmailDialog": {
+      "header": "إرسال وصفة طبية",
+      "fields": {
+          "recipients": "المستلمون",
+          "subject": "الموضوع",
+          "message": "الرسالة"
+      },
+      "placeholders": {
+          "recipients": "email1@example.com, email2@example.com",
+          "subject": "موضوع الوصفة الطبية...",
+          "message": "رسالة إضافية..."
+      },
+      "buttons": {
+          "cancel": "إلغاء",
+          "send": "إرسال"
+      },
+      "errors": {
+          "recipientsRequired": "يجب إدخال مستلم واحد على الأقل"
+      },
+      "messages": {
+          "success": "نجاح",
+          "error": "خطأ",
+          "sentSuccessfully": "تم إرسال الوصفة الطبية بنجاح",
+          "sendFailed": "فشل إرسال الوصفة الطبية"
+      }
+  }
+    },
+"Acte":{
+  "number_acte":"عدد  المستندات",
+      "common": {
+      "success": "نجاح",
+      "error": "خطأ",
+      "canceled": "ملغى"
+    },
+  
+    "add_acte": {
+      "messages": {
+        "success": "تمت إضافة المستند بنجاح",
+        "generic_error": "خطأ أثناء إضافة المستند",
+        "invalid_sire": "مصفوفة فارغة."
+      }
+    },
+    "add_analyse_sanitaire":{
+      "messages": {
+      
+        "success": "تم إضافة التحاليل الصحية بنجاح",
+        "generic_error": "خطأ أثناء إضافة التحاليل الصحية",
+        "invalid_sire": "empty array."
+      }
+    },
+    "add_planning":
+    {
+      "success": "تم إضافة التخطيط بنجاح",
+      "generic_error": "خطأ أثناء إضافة التخطيط",
+      "invalid_sire": "empty array."
+    }
+    },
+"SellHorsecomponent":{
+  
+}
+  ,
+  "ConnectionError": {
+    "title": "لا يوجد اتصال بالإنترنت",
+    "message": "تعذر الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت الخاص بك.",
+    "retryButton": "إعادة المحاولة"
+},
+"Login": {
+    "title": "مرحباً بك",
+    "registerTitle": "إنشاء حساب",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+     "confirmpassword":" تأكيد كلمة السر",
+    "rememberMe": "تذكرني",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "loginButton": "تسجيل الدخول",
+    "toggleRegister": "إنشاء حساب",
+    "toggleLogin": "العودة لتسجيل الدخول",
+    "register": {
+      "username": "اسم المستخدم",
+      "email": "البريد الإلكتروني",
+      "entity": "الكيان",
+      "entityName": "اسم الكيان",
+      "entityDescription": "وصف الكيان",
+      "registerButton": "إنشاء حساب",
+      "registerWithEntityButton": "إنشاء حساب وكيان",
+      "condition": {
+  "hasLowercase": "حرف صغير واحد على الأقل",
+  "hasUppercase": "حرف كبير واحد على الأقل",
+  "hasSpecialChar": "حرف خاص واحد على الأقل",
+  "hasNumber": "رقم واحد على الأقل",
+  "hasMinLength": "8 أحرف على الأقل",
+  "identique": "كلمات المرور متطابقة",
+  "messages": {
+  "promptLabel": "اختر كلمة مرور",
+  "weakLabel": "بسيطة جداً",
+  "mediumLabel": "متوسطة القوة",
+  "strongLabel": "كلمة مرور قوية"
+}
+}
+    },
+    "connection": {
+      "checking": "جارٍ التحقق من الاتصال...",
+      "errorTitle": "لا يوجد اتصال بالإنترنت",
+      "errorMessage": "تعذر الاتصال بالخادم. يرجى التحقق من اتصالك بالإنترنت.",
+      "retry": "إعادة المحاولة"
+    },
+    "erreurmessagelogin": {
+    "IC": " خطأ في إسم المستخدم أو كلمة السر ",
+    "IRD": "بيانات الطلب غير صالحة",
+    "AL": "الحساب مغلق. حاول مرة أخرى في ",
+    "FA": "عدد كبير جدًا من المحاولات الفاشلة. تم قفل الحساب لمدة 5 دقائق.",
+    "CE": "يرجى الإتصال بالمدير لتأكيد بريدك الإلكتروني قبل تسجيل الدخول"
+  }
+  }
+  ,
+  "ActeComponent": {
+    "table": {
+      "title": "قائمة المستندات  ",
+      "buttons": {
+        "add_acte": "إضافة مستند",
+        "clear": "مسح",
+        "excel": "تصدير إلى إكسل",
+        "pdf": "تصدير إلى PDF",
+        "csv": "تصدير إلى CSV"
+      },
+      "columns": {
+        "id": "المعرف",
+        "addDate": "تاريخ الإضافة",
+        "notes": "ملاحظات",
+        "documentType": "نوع المستند",
+        "actions": "إجراءات"
+      },
+      "filters": {
+        "search": "بحث...",
+        "byId": "تصفية حسب المعرف",
+        "byDate": "تصفية حسب التاريخ",
+        "byNotes": "تصفية حسب الملاحظات",
+        "byType": "تصفية حسب النوع"
+      },
+      "documentTypes": {
+        "healthAnalysis": "تحليل صحي",
+        "planning": "تخطيط"
+      },
+      "messages": {
+        "empty": "لا توجد مستندات",
+        "loading": "جاري تحميل المستندات..."
+      }
+    },
+    "buttons": {
+      "add_acte": "إضافة مستند"
+    },
+    "EditDialog": {
+      "header": "تعديل المستند - المعرف: {id}",
+      "buttons": {
+        "edit": "حفظ التغييرات"
+      },
+      "succes":"تم تحديث المستند بنجاح",
+     "error":"خطأ أثناء تحديث المستند"
+    },
+    "AddDialog": {
+      "header": "إضافة مستند جديد",
+      "buttons": {
+        "add": "إضافة مستند"
+      },
+      "succes":"تم إضافة المستند بنجاح",
+     "error":"خطأ أثناء إضافة المستند"
+    },
+    "DetailsDialog": {
+        "header": "تفاصيل المستند - المعرف: {{id}}",
+        "sections": {
+            "basicInfo": "المعلومات الأساسية",
+            "attachments": "المرفقات",
+            "horses": "الخيول المرتبطة",
+            "healthAnalysis": "التحليل الصحي",
+            "planning": "التخطيط",
+            "contacts": "جهات الاتصال المرتبطة"
+        },
+        "fields": {
+            "addDate": "تاريخ الإضافة",
+            "documentType": "نوع المستند",
+            "notes": "ملاحظات",
+            "horse": {
+                "sire": "رقم SIRE",
+                "name": "الاسم",
+                "coat": "اللون",
+                "birthDate": "تاريخ الميلاد"
+            },
+            "analysis": {
+                "type": "نوع التحليل",
+                "result": "النتيجة",
+                "date": "تاريخ التحليل"
+            },
+            "planning": {
+                "viewType": "نوع العرض",
+                "filters": "الفلاتر",
+                "startDate": "تاريخ البدء",
+                "endDate": "تاريخ الانتهاء"
+            },
+            "contact": {
+                "name": "الاسم",
+                "coordinates": "معلومات الاتصال"
+            }
+        },
+        "buttons": {
+            "close": "إغلاق",
+            "exportPDF": "تحميل بصيغة  PDF"
+        }
+    },
+    "EmailDialog": {
+      "header": "إرسال بريد إلكتروني",
+      "fields": {
+        "recipients": " المستلمون الرجاء كتابة الايميلات بالغة الفرنسية او الإنجليزية مع وضع فاصلة بينهم",
+        "subject": "الموضوع",
+        "message": "الرسالة"
+      },
+      "placeholders": {
+        "recipients": "email1@example.com, email2@example.com",
+        "subject": "موضوع البريد الإلكتروني...",
+        "message": "رسالة اختيارية..."
+      },
+      "buttons": {
+        "cancel": "إلغاء",
+        "send": "إرسال"
+      },
+      "errors": {
+        "recipientsRequired": "يجب إدخال مستلم واحد على الأقل"
+      },
+      "successsend":"تم إرسال الإميل بنجاح",
+      "errorsend":"خطأ أثناء إرسال الإميل "
+    }
+  },
+  "Dashboard": {
+    "title": "لوحة التحليلات",
+    "horsesStatus": "حالة الخيول",
+    "entitiesDistribution": "توزيع الكيانات",
+    "actesRepartition": "توزيع الأعمال",
+    "totalActs": "إجمالي الأعمال",
+    "actsByMonth": "الأعمال حسب الشهر",
+    "movementsQualifications": "الحركات والمؤهلات",
+    "selectYear": "اختر السنة",
+    "months": {
+      "jan": "جانفي",
+      "feb": "فيفري",
+      "mar": "مارس",
+      "apr": "أفريل",
+      "may": "ماي",
+      "jun": "جوان",
+      "jul": "جويلية",
+      "aug": "أوت",
+      "sep": "سبتمبر",
+      "oct": "أكتوبر",
+      "nov": "نوفمبر",
+      "dec": "ديسمبر"
+    },
+    "chartLabels": {
+      "archivedHorses": "الخيول المؤرشفة",
+      "activeHorses": "الخيول النشطة",
+      "horses": "الخيول",
+      "contacts": "جهات الاتصال",
+      "races": "السلالات",
+      "categories": "الفئات",
+      "locations": "المواقع",
+      "healthAnalysis": "التحاليل الصحية",
+      "plannings": "التخطيطات",
+      "movements": "الحركات",
+      "qualifications": "المؤهلات",
+       "actsInYear": "الأعمال في سنة {{year}}",
+    "acts": "الأعمال"
+    },
+    "ordonnancesByMonth": "الصفات الطبية بالشهر",
+    "ordonnancesInYear": "الوصفات الطبية في سنة {{year}}",
+    "ordonnances": "الوصفات الطبية",
+    "facturesByMonth":" عدد الفواتير في الشهر",
+    "facturesInYear": "الفواتير في {{year}}",
+    "factures": "الفواتير",
+    "facturesDetails": "تفاصيل الفاتورة",
+    "montantHT": "Montant HT",
+    "montantTTC": "Montant TTC",
+    "acheteur": "Acheteur",
+    "modePaiement": "Mode de paiement"
+  },
+  "Users": {
+    "resendConfirmation": {
+      "success": "تم إعادة إرسال رسالة لتفعيل بريدك الإلكتروني",
+      "error": "خطأ أثناء إعادة إرسال تفعيل البريد الإكتروني حاول مرة أخرى"
+    },
+    "list_users":" قائمة المستخدمون",
+    "number_user":"عدد المستخدمين",
+    "table": {"emailConfirmed": {
+        "true": "مفعل",
+        "false": "غير مفعل"
+      },
+      "resendConfirmationTooltip": "إعادة إرسال تفعيل البريد الإكتروني",
+      "clearButton": "مسح الفلاتر",
+      "export": {
+        "excel": "إكسل",
+        "pdf": "PDF",
+        "csv": "CSV"
+      },
+      "searchPlaceholder": "ابحث عن مستخدمين...",
+      "columns": {
+        "nom": "الاسم",
+        "prenom": "اللقب",
+        "email": "البريد الإلكتروني",
+        "username": "اسم المستخدم",
+        "role": "الدور",
+        "lastLogin": "آخر تسجيل دخول",
+        "actions": "إجراءات"
+      },
+      "deleteTooltip": "حذف المستخدم",
+      "editTooltip": "تعديل المستخدم",
+      "changeRoleTooltip": "تغيير الدور",
+      "unauthorized": "غير مصرح",
+      "emptyMessage": "لا يوجد مستخدمون",
+      "loadingMessage": "جاري تحميل المستخدمين..."
+    },
+    "add": {
+      "title": "إضافة مستخدم",
+      "success": "نجاح",
+      "successDetail": "تم إنشاء المستخدم بنجاح",
+      "error": "خطأ",
+      "roleError": "خطأ في تعيين الدور",
+      "passwordMismatch": "خطأ في كلمة المرور",
+      "passwordMismatchDetail": "كلمات المرور غير متطابقة"
+    },
+    "fields": {
+      "nom": "الاسم",
+      "prenom": "اللقب",
+      "email": "البريد الإلكتروني",
+      "username": "اسم المستخدم",
+      "role": "الدور",
+      "password": "كلمة المرور",
+      "confirmpassword": "تأكيد كلمة المرور"
+    },
+    "placeholders": {
+      "nom": "أدخل الاسم",
+      "prenom": "أدخل اللقب",
+      "email": "أدخل البريد الإلكتروني",
+      "username": "أدخل اسم المستخدم",
+      "role": "اختر دورًا",
+      "password": "أدخل كلمة المرور",
+      "confirmpassword": "أكد كلمة المرور"
+    },
+    "buttons": {
+      "add": "إضافة",
+      "cancel": "إلغاء"
+    },
+    "update": {
+      "title": "تحديث المستخدم",
+      "fillAllFields": "يرجى ملء جميع الحقول المطلوبة",
+      "success": "تم تحديث المستخدم بنجاح",
+      "error": "فشل تحديث المستخدم",
+      "fields": {
+        "currentPassword": "كلمة المرور الحالية",
+        "newPassword": "كلمة المرور الجديدة"
+      },
+      "placeholders": {
+        "currentPassword": "أدخل كلمة المرور الحالية",
+        "newPassword": "أدخل كلمة مرور جديدة"
+      },
+      "buttons": {
+        "update": "تحديث"
+      },
+      "passwordRequirements": {
+        "lowercase": "حروف صغيرة",
+        "uppercase": "حروف كبيرة",
+        "number": "رقم",
+        "specialChar": "حرف خاص",
+        "minLength": "8 أحرف على الأقل"
+      }
+    },
+    "delete": {
+      "confirmationTitle": "تأكيد الحذف",
+      "confirmationMessage": "هل أنت متأكد أنك تريد حذف هذا المستخدم؟",
+      "successTitle": "نجاح",
+      "successMessage": "تم حذف المستخدم بنجاح",
+      "errorTitle": "خطأ",
+      "errorMessage": "فشل حذف المستخدم",
+      "cannotDeleteSelf": "لا يمكنك حذف حسابك الخاص"
+    },
+    
+  "Common":
+  {
+    "yes":"نعم",
+    "no":"لا",
+    "warning":"تنبيه"
+  },
+  "changeRole": {
+    "title": "تغيير دور المستخدم",
+    "cannotChangeOwnRole": "لا يمكنك تغيير دورك الخاص",
+    "noChange": "الرجاء اختيار دور مختلف",
+    "success": "تم تغيير الدور بنجاح",
+    "error": "فشل تغيير الدور",
+    "fields": {
+      "currentRole": "الدور الحالي",
+      "newRole": "الدور الجديد"
+    },
+    "placeholders": {
+      "selectRole": "اختر دورًا"
+    },
+    "buttons": {
+      "assign": "تعيين"
+    }
+  }
+  }
+}

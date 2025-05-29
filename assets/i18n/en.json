@@ -1,0 +1,1753 @@
+{
+    "menu": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "calendar": "Calendar",
+        "horses": "Horses",
+        "horse_management": "Horse Management",
+        "horse_list": "Horses List",
+        "add_horse": "Add Horse",
+        "movement_management": "Movement Management",
+        "movement_list": "Movements List",
+        "move_horses": "Move Horses",
+        "qualification_management": "Qualification Management",
+        "qualification_list": "Qualifications List",
+        "schedule_qualification": "Schedule Qualification",
+        "horse_sales": "Horse Sales",
+        "completed_sales": "Completed Sales",
+        "sell_horses": "Sell Horses",
+        "horse_acte":"Horse acte",
+        "completed_acte":"Acte List",
+        "add_acte":"Add acte",
+        "prescription": "Prescription",
+        "prescription_management": "Prescription Management",
+        "prescription_list": "Prescriptions List",
+        "add_prescription": "Add Prescription",
+        "category": "Category",
+        "category_management": "Category Management",
+        "category_list": "Categories List",
+        "add_category": "Add Category",
+        "contact": "Contact",
+        "contact_management": "Contact Management",
+        "contact_list": "Contacts List",
+        "add_contact": "Add Contact",
+        "contact_type_management": "Contact Type Management",
+        "contact_type_list": "Contact Types List",
+        "add_contact_type": "Add Contact Type",
+        "breed": "Breed",
+        "breed_management": "Breed Management",
+        "breed_list": "Breeds List",
+        "add_breed": "Add Breed",
+        "locations": "Locations",
+        "location_management": "Location Management",
+        "location_list": "Locations List",
+        "add_location": "Add Location",
+        "ui_components": "UI Components",
+        "form_layout": "Form Layout",
+        "input": "Input",
+        "button": "Button",
+        "table": "Table",
+        "list": "List",
+        "tree": "Tree",
+        "panel": "Panel",
+        "overlay": "Overlay",
+        "media": "Media",
+        "menu_component": "Menu",
+        "message": "Message",
+        "file": "File",
+        "chart": "Chart",
+        "timeline": "Timeline",
+        "misc": "Misc",
+        "pages": "Pages",
+        "landing": "Landing",
+        "auth": "Authentication",
+        "login": "Login",
+        "error": "Error",
+        "access_denied": "Access Denied",
+        "crud": "CRUD",
+        "not_found": "Not Found",
+        "empty": "Empty",
+        "hierarchy": "Hierarchy",
+        "submenu": "Submenu",
+        "get_started": "Get Started",
+        "documentation": "Documentation",
+        "view_source": "View Source",
+        "users":"users",
+        "users_list":"Users list"
+    },
+    "style": {
+        "margin-sidebar-right": "",
+        "margin-sidebar-left": "",
+        "layout-main-container-right": "",
+         "layout-main-container-left": ""
+    },
+    "userMenu": {
+    "greeting": "Hello, {{nom}} {{prenom}}",
+    "role": "({{role}})",
+    "settings": " Settings",
+    "edit": "Edit",
+    "logout": "Logout"
+  },
+   "HorseComponent": {
+  "coats": {
+      "ALEZAN": "Chestnut",
+      "BAI": "Bay",
+      "BAI_BRUN": "Dark bay",
+      "BLANC": "White",
+      "GRIS": "Gray",
+      "NOIR": "Black",
+      "PIE": "Piebald",
+      "ROUAN": "Roan",
+      "SOURIS": "Mouse",
+      "AUBERE": "Strawberry roan",
+      "CREME": "Cream",
+      "ISABELLE": "Isabella",
+      "PALOMINO": "Palomino"
+    },
+    "anciennoms": {
+        "dialog_title": "Name History",
+        "current_name": "Current name",
+        "sire_number": "SIRE number",
+        "old_name": "Old name",
+        "change_date": "Change date",
+        "no_old_names": "No old names found",
+        "close_button": "Close",
+        "showing_current_page_report": "Showing {first} to {last} of {totalRecords} entries"
+    },
+    "title": "Horses List",
+    "buttons": {
+      "add_horse": "Add Horse",
+      "add_prescription": "Add Prescription",
+      "import_csv": "Import from CSV",
+      "add_document": "Add Document",
+      "move_horses": "Move Horses",
+      "sell_horses": "Sell Horses"
+    },
+        "number_horse":"Number Horse",
+        "number_horse_notarchived":"Number Horse not archived",
+        "number_horse_archived":"Number Horse archived",
+  
+        "number_acte":"Number acte",
+        "number_prescription":"Number prescription",
+        "table": {
+        "sire_number": "SIRE Number",
+        "sire_key": "SIRE Key",
+        "name": "Name",
+        "coat": "Coat",
+        "birth_date": "Birth Date",
+        "gender": "Gender",
+        "archived": "Archived",
+        "actions": "Actions",
+        "no_data": "No horses found",
+        "loading": "Loading horse data. Please wait.",
+        "clear": "Clear",
+        "search": "Search...",
+        "yes": "Yes",
+        "no": "No"
+        },
+        "genders": {
+            "male": "Male",
+            "female": "Female"
+        }
+      ,
+        "AddHorseDialog": {
+           "selectCoat": "Select a coat",
+            "header": "Add Horse",
+            "fields": {
+            "name": "Name",
+            "coat": "Coat",
+            "birth_date": "Birth Date",
+            "gender": "Gender",
+            "father": "Father",
+            "mother": "Mother",
+            "location": "Location",
+            "race_code": "Race Code",
+            "category": "Category",
+            "contacts": "Contacts"
+            },
+        "placeholders": {
+          "select_gender": "Select gender",
+          "select_father": "Identify father",
+          "select_mother": "Identify mother",
+          "select_location": "Select location",
+          "select_race": "Select race",
+          "select_category": "Select category",
+          "select_contacts": "Select contacts"
+        },
+        "buttons": {
+          "cancel": "Cancel",
+          "add": "Add"
+        },
+        "genderOptions": {
+          "male": "Male",
+          "female": "Female"
+        },
+        "messages": {
+          "add_first_category": "First add category",
+          "add_first_location": "First add location",
+          "add_first_race":"First add  race",
+          "add_first_contact":"First add contact"
+        }
+                          }
+      ,
+      "PrescriptionDialog": {
+    "header": "Add Prescription for Horses",
+    "headersingle": "Add Prescription for s specified Horse",
+    "numbersire":"SIRE number",
+    "fields": {
+      "horses": "Non-archived Horses",
+      "date": "Date",
+      "is_sick": "Is sick?",
+      "symptoms": "Symptoms",
+      "disease": "Disease Name",
+      "medications": "Medications"
+    },
+    "placeholders": {
+      "select_horses": "Select horses",
+      "select_symptoms": "Select symptoms",
+      "select_disease": "Select disease",
+      "select_yes_no": "Select",
+      "enter_medications": "Enter medications"
+    },
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "add": "Add"
+    }
+                            }
+      ,
+      "ImportDialog": {
+    "header": "Import Horses from CSV File",
+    "labels": {
+      "select_file": "Select file",
+      "import": "Import"
+    },
+    "messages": {
+      "file_type": "Only CSV files are accepted",
+      "max_size": "Maximum file size: 1MB"
+    }
+                    }
+     ,
+     "AddDocumentDialog": {
+    "header": "Add acte to multiple Horse",
+    "headersingle": "Add acte to specific acte",
+    "fields": {
+      "horses": "Non-archived Horses",
+      "notes": "Notes",
+      "attachments": "Attachments",
+      "contacts": "Contacts",
+      "document_type": "Document Type"
+    },
+    "placeholders": {
+      "select_horses": "Select horses",
+      "enter_notes": "Enter notes",
+      "select_contacts": "Select contacts",
+      "select_document_type": "Select document type"
+    },
+    "buttons": {
+      "add": "Add",
+      "choosefile":"choose file",
+      "cancelfile":"cancel all file"
+    }
+    },
+    "DynamicFormDialog": {
+    "header": "Fill Additional Information",
+    "fields": {
+      "acteId": "Document ID",
+      "documentType": "Document Type",
+      "healthAnalysis": "Health Analysis",
+      "planning": "Planning",
+      "result": "Result",
+      "analysisType": "Analysis Type",
+      "analysisDate": "Analysis Date",
+      "viewType": "View Type",
+      "filters": "Filters",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "documentTypes": {
+      "healthAnalysis": "Health Analysis",
+      "planning": "Planning"
+    },
+    "buttons": {
+      "submit": "Submit"
+    }
+  },
+  "MoveHorsesDialog": {
+    "header": "Move Horses",
+    "fields": {
+      "horses": "Horses to move (non-archived)",
+      "carrier": "Carrier",
+      "departure": "Departure date and time",
+      "arrival": "Arrival date and time",
+      "conditions": "Conditions",
+      "departure_location": "Departure location",
+      "arrival_location": "Arrival location"
+    },
+    "placeholders": {
+      "select_horses": "Select horses",
+      "enter_carrier": "Enter carrier name",
+      "enter_conditions": "Enter conditions"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "add": "Add"
+    }
+  },
+  "SellHorsesDialog": {
+    "header": "Sell Horses",
+    "fields": {
+      "horses": "Horses to sell (non-archived and unsold)",
+      "prices": "Set prices",
+      "buyer": "Buyer",
+      "payment_method": "Payment method",
+      "notes": "Notes"
+    },
+    "placeholders": {
+      "select_horses": "Select horses",
+      "enter_buyer": "Enter buyer name",
+      "enter_notes": "Enter notes",
+      "select_payment": "Select payment method"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "create_invoice": "Create Invoice"
+    },
+    "messages": {
+      "add":
+      {
+        "success":"Horses saled successefully",
+        "error":"Error while saling Horses",
+        "cancel":"Sale Horse canceled"
+      },
+      "no_horses": {
+        "title": "No horses available for sale",
+        "description": "All horses are archived or already sold."
+      },
+      "close": "Close"
+    },
+    "payment_options": {
+      "cash": "Cash",
+      "check": "Check",
+      "transfer": "Bank Transfer",
+      "card": "Credit Card"
+    }
+  },
+
+   "messages": {
+      "delete": {
+          "title":"Delete",
+        "confirm": "Do you really want to delete this horse?",
+        "header": "Delete confirmation",
+        "success": "Horse deleted successfully",
+        "error": "Error while deleting horse",
+        "cancel": "Deletion cancelled"
+      },
+      "add":
+      {
+         "title":"Add",
+"success": "Horse added successfully",
+        "error": "Error while adding horse",
+        "cancel": "adding cancelled"
+      },
+      "edit": {
+         "title":"Edit",
+        "success": "Horse modified successfully",
+        "error": "Error while modifying horse"
+      },
+      "archive": {
+          "title":"Archived",
+        "confirm": "Do you really want to archive this horse?",
+        "header": "Archive confirmation",
+        "success": "Horse archived successfully",
+        "error": "Error while archiving horse",
+        "cancel": "Archive cancelled"
+      },
+      "restore": {
+          "title":"Restore",
+        "confirm": "Do you really want to restore this horse?",
+        "header": "Restore confirmation",
+        "success": "Horse restored successfully",
+        "error": "Error while restoring horse",
+        "cancel": "Restoration cancelled"
+      },
+      "sell":
+    {
+      "title":"Horse was sell " 
+    },
+      "invalid_request": "Invalid request",
+      "horse_not_found": "Horse not found"
+    }
+    ,
+    "EditHorseDialog": {
+      "header": "Edit Horse",
+      "fields": {
+        "sireNumber": "SIRE Number",
+        "name": "Name",
+        "coat": "Coat",
+        "birthDate": "Birth Date",
+        "gender": "Gender",
+        "location": "Location",
+        "raceCode": "Race Code",
+        "category": "Category",
+        "contacts": "Contacts"
+      },
+      "placeholders": {
+        "selectGender": "Select gender",
+        "selectLocation": "Select location",
+        "selectRace": "Select race",
+        "selectCategory": "Select category",
+        "selectContacts": "Select contacts"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save"
+      }
+    }
+  }
+  ,
+    "calendar": {
+      "today": "Today",
+      "month": "Month",
+      "week": "Week",
+      "day": "Day",
+      "allDay": "All day",
+      "more": "more",
+      "noEvents": "No events to display",
+      "eventTypes": {
+        "mouvement": "Movement",
+        "qualification": "Qualification"
+      },
+      "dialog": {
+        "edit": "Edit Event",
+        "new": "New Event",
+        "eventType": "Event Type",
+        "eventTypes": {
+          "mouvement": "Movement",
+          "qualification": "Qualification"
+        },
+        "fieldsmouvement": {
+          "raison": "Reason",
+          "transporteur": "Carrier",
+          "dateHeureDepart": "Departure Date/Time",
+          "dateHeureArrivee": "Arrival Date/Time",
+          "lieuDepart": "Departure Location",
+          "lieuArrivee": "Arrival Location",
+          "chevaux": "Horses",
+          "conditions": "Special Conditions",
+          "nom": "Name"
+          
+        },
+        "fieldsqualification": {
+          "nom": "Name",
+          "dateHeureDepart": "Departure Date/Time",
+          "dateHeureArrivee": "Arrival Date/Time",
+          "lieuDepart": "Departure Location",
+          "lieuArrivee": "Arrival Location",
+          "chevaux": "Horses",
+          "distances": "Distance (meters)"
+        },
+        "buttons": {
+          "save": "Save",
+          "cancel": "Cancel",
+          "delete": "Delete"
+        }
+      }
+    },
+  "error": {
+    "forbidden": {
+      "title": "Forbidden",
+      "message": "Access to this resource is denied",
+      "permission_manager": "Permission Manager",
+      "unauthorized": "You are not authorized to view this page"
+    }
+  },
+  "Mouvement": {
+    "title_mouvement":"List of movement",
+    "number_mouvement":"Number of movement",
+    "table": {
+        "clear_filters": "Clear",
+        "export_excel": "Excel",
+        "export_pdf": "PDF",
+        "export_csv": "CSV",
+        "search_placeholder": "Search...",
+        "filter_placeholder_id": "Filter by ID",
+        "filter_placeholder_transporter": "Filter by transporter",
+        "filter_placeholder_date": "Filter by date",
+        "filter_placeholder_conditions": "Filter by conditions",
+        "filter_placeholder_location": "Filter by location",
+        "filter_placeholder_reason": "Filter by reason",
+        "headers": {
+            "id": "ID",
+            "transporter": "Transporter",
+            "departure_date": "Departure Date",
+            "arrival_date": "Arrival Date",
+            "conditions": "Conditions",
+            "departure_location": "Departure Location",
+            "arrival_location": "Arrival Location",
+            "sire_number": "SIRE Number",
+            "add_date": "Add Date",
+            "reason": "Reason",
+            "actions": "Actions"
+        },
+        "actions": {
+            "delete": "Delete",
+            "edit": "Edit"
+        },
+        "not_authorized": "You are not authorized to perform actions!",
+        "no_data": "No movements found",
+        "loading_data": "Loading data. Please wait."
+    },
+    "add_title": "Add Movement",
+    "edit_title": "Edit Movement",
+    "delete_confirmation": "Do you really want to delete this movement?",
+    "delete_header": "Delete Confirmation",
+    "Common": {
+    "yes": "Yes",
+    "no": "No"
+              }
+    ,
+    "add_success": "Movement added successfully",
+    "add_error": "Error while adding movement",
+    "fields": {
+      "horses": "Horses",
+      "carrier": "Carrier",
+      "departure": "Departure date and time",
+      "arrival": "Arrival date and time",
+      "conditions": "Transport conditions",
+      "reason":"Reason ",
+      "departure_location": "Departure location",
+      "arrival_location": "Arrival location"
+    },
+    "placeholders": {
+      "select_horses": "Select horses",
+      "enter_carrier": "Enter carrier name",
+      "enter_conditions": "Describe transport conditions",
+      "enter_reason":"enter reason "
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "add": "Add",
+      "save": "save"
+    },
+    "messages":{
+      "successadd":" movement added successfully",
+      "erroradd":"Error while adding ",
+      "successedit":" movement edit successfully",
+      "erroredit":"Error while editing ",
+      "successdelete":" movement deleteted successfully",
+      "errordelete":"Error while deleting ",
+      "cancel":"Delete cancelling ",
+      "warning":"Informations"
+    }
+  },
+ "Qualification": {
+  "number_qualification":"Number of qualification",
+  "delete_confirmation": {
+    "message": "Are you sure you want to delete the qualification \"{{name}}\"?",
+    "header": "Confirmation",
+    "success": "Qualification deleted",
+    "error": "Deletion failed",
+    "mouvement_message": "Are you sure you want to delete this movement?",
+    "qualification_message": "Are you sure you want to delete this qualification?",
+   
+    "mouvement_success": "Movement deleted",
+    "qualification_success": "Qualification deleted",
+    "mouvement_error": "Failed to delete movement",
+    "qualification_error": "Failed to delete qualification"
+  },
+  "manage_rang_horse": {
+      "header": "Horse Ranking Management",
+      "headers": {
+        "sire": "SIRE",
+        "rank": "Rank",
+        "firstPlace": "1st place",
+        "secondPlace": "2nd place",
+        "thirdPlace": "3rd place",
+        "actions": "Actions"
+        
+      },
+      "buttons": {
+        "save": "Save",
+        "finalize": "Finalize"
+      },
+      "message":{
+        "updaterangsuccess":"Rank updated successfully",
+        "updaterangerror":"Error while updating rank",
+        "finaliser":"Qualification finalised",
+        "notfound":"No qualification selected"
+      }
+    },
+    "details_dialog": {
+      "header": "Qualification Details",
+      "fields": {
+        "id": "ID",
+        "name": "Name",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "distance": "Distance",
+        "departureLocation": "Departure Location",
+        "arrivalLocation": "Arrival Location",
+        "horsesCount": "Number of Horses"
+      },
+      "horsesTable": {
+        "title": "Participating Horses Details",
+        "headers": {
+          "horseName": "Horse Name",
+          "sire": "SIRE",
+          "rank": "Rank",
+          "firstPlace": "1st Places",
+          "secondPlace": "2nd Places",
+          "thirdPlace": "3rd Places"
+        },
+        "noData": "No horse details available"
+      },
+      "buttons": {
+        "close": "Close",
+        "exportPDF": "Export PDF"
+      }
+    },
+    "stats_dialog": {
+      "header": "Horse Statistics",
+      "fields": {
+        "maxRanks": "Maximum number of ranks to display",
+        "horseName": "Horse: {{horseName}}"
+      },
+      "buttons": {
+        "excel": "Excel",
+        "pdf": "PDF",
+        "csv": "CSV",
+        "close": "Close"
+      },
+      "table": {
+        "headers": {
+          "rank": "Rank",
+          "count": "Number of times"
+        }
+      }
+    },
+  "Table": {
+      "caption": {
+        "clear": "Clear",
+        "exportExcel": "Excel",
+        "exportPDF": "PDF",
+        "exportCSV": "CSV",
+        "search": "Search..."
+      },
+      "headers": {
+        "id": "ID",
+        "name": "Name",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "distance": "Distance (m)",
+        "departureLocation": "Departure Location",
+        "arrivalLocation": "Arrival Location",
+        "horses": "Horses (SIRE)",
+        "actions": "Actions"
+      },
+      "messages": {
+        "noQualifications": "No qualifications found",
+        "loading": "Loading qualifications. Please wait.",
+        "notAuthorized": "You are not authorized to perform actions!"
+      },
+      "buttons": {
+        "view": "View",
+        "edit": "Edit",
+        "delete": "Delete",
+        "manageHorses": "Manage Horses"
+      }
+    },
+    "title_component":"List of Qualifications",
+    "add_title": "Add Qualification",
+    "edit_title": "Edit Qualification",
+    "add_success": "Qualification added successfully",
+    "add_error": "Error while adding qualification",
+    "edit_success":"'Qualification updated successfully'",
+    "edit_error":"'Error while updating qualification '",
+    "fields": {
+      "name": "Name",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "distance": "Distance (meters)",
+      "departure_location": "Departure Location",
+      "arrival_location": "Arrival Location",
+      "horses": "Participating Horses"
+    },
+    "placeholders": {
+      "name": "Enter qualification name",
+      "select_horses": "Select horses"
+    },
+    "buttons": {
+      "add": "Add Qualification",
+      "cancel": "Cancel",
+      "save": "Save",
+      "edit":"Edit Qualification"
+    }
+  },
+  "Facture": {
+    "number_facture":"Number of sales",
+    "invoiceTable": {
+      "caption": {
+        "clear": "Clear",
+        "exportExcel": "Excel",
+        "exportCSV": "CSV",
+        "search": "Search..."
+      },
+      "headers": {
+        "id": "ID",
+        "invoiceNumber": "Invoice Number",
+        "date": "Date",
+        "buyer": "Buyer",
+        "amountHT": "Amount HT (TND)",
+        "vat": "VAT (TND)",
+        "amountTTC": "Amount TTC (TND)",
+        "paymentMethod": "Payment Method",
+        "horses": "Horses (SIRE)",
+        "actions": "Actions"
+      },
+      "messages": {
+        "noInvoices": "No invoices found.",
+        "loading": "Loading invoices. Please wait."
+      },
+      "buttons": {
+        "view": "View",
+        "edit": "Edit",
+        "delete": "Delete"
+      }
+    },
+    "title_component":"List of sales invoice",
+    "edit_race":"Edit Sale Invoice",
+    "add_title": "Create Sale Invoice",
+    "add_success": "Invoice created successfully",
+    "add_error": "Error while creating invoice",
+    "no_horses_available": "No horses available for sale",
+    "fields": {
+      "horses": "Horses for sale",
+      "prices": "Horse prices",
+      "buyer": "Buyer",
+      "payment_method": "Payment method",
+      "notes": "Notes",
+      "existhorses":"List of exist Horse",
+      "newchoosedhorses":"New list of selected horse"
+    },
+    "placeholders": {
+      "select_horses": "Select horses",
+      "enter_buyer": "Enter buyer name",
+      "enter_notes": "Enter additional notes"
+    },
+    "buttons": {
+      "create": "Create invoice",
+      "cancel":"Cancel",
+      "edit":"Edit"
+    },
+    "tabs": {
+        "completed_sales": "Completed sales",
+        "new_sale": "New sale"
+    },
+    "add_facture":{
+      "succes":"success",
+      "detail":"Invoice added ",
+      "error":"Erreur while adding invoice",
+     
+      "detailprice": "All horse must have a price"
+    },
+    "update_facture":{
+      "succes":"success",
+      "detail":"Invoice updated ",
+      "error":"Erreur while updating invoice"
+    },
+    "delete_facture":{
+      "succes":"success",
+      "detail":"Invoice deleted",
+      "error":"Erreur while deleting invoice",
+      "deleteConfirmation": {
+      "message": "Are you sure you want to delete this invoice \"{{invoiceNumber}}\"?",
+      "header": "Confirmation",
+      "success": "Invoice deleted successfully",
+      "error": "Failed to delete invoice"
+    }
+    }
+  },
+  "Contact": {
+    "number_contact":"Number of contacts",
+      "table": {
+        "sousContact": {
+          "title": "Contacts List",
+          "buttons": {
+            "addContact": "Add Contact",
+            "addType": "Add Contact Type",
+            "clear": "Clear",
+            "excel": "Excel",
+            "pdf": "PDF",
+            "csv": "CSV"
+          },
+          "columns": {
+            "id": "ID",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "coordinates": "Coordinates",
+            "contactType": "Contact Type",
+            "actions": "Actions"
+          },
+          "search": {
+            "placeholder": "Search...",
+            "byId": "Search by ID",
+            "byLastName": "Search by last name",
+            "byFirstName": "Search by first name",
+            "byCoordinates": "Search by coordinates",
+            "byType": "Search by type"
+          },
+          "messages": {
+            "empty": "No contacts found",
+            "loading": "Loading contacts data. Please wait.",
+            "unauthorized": "You are not authorized to perform actions!"
+          }
+        }
+      }
+    ,
+    "add_title": "Add New Contact",
+    "add_success": "Contact added successfully",
+    "add_error": "Error while adding contact",
+    "fields": {
+      "last_name": "Last Name",
+      "first_name": "First Name",
+      "contact_info": "Contact Information (phone ou email)",
+      "contact_type": "Contact Type"
+    },
+    "placeholders": {
+      "enter_last_name": "Enter last name",
+      "enter_first_name": "Enter first name",
+      "enter_contact_info": "Enter contact information (phone ou email)",
+      "select_contact_type": "Select contact type"
+    },
+    "buttons": {
+      "add": "Add Contact",
+      "cancel": "Cancel"
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalid_contact_info": "Invalid contact information format"
+    }
+  },
+"Typecontact": {
+  "number_typecontact":"Number of type contact (speciality )",
+  "table": {
+    "sousTypecontact": {
+      "title": "List of contact types",
+      "addButton": "Add a contact type",
+      "clearButton": "Clear",
+      "searchPlaceholder": "Search...",
+      "export": {
+        "excel": "Excel",
+        "pdf": "PDF",
+        "csv": "CSV"
+      },
+      "columns": {
+        "id": "ID",
+        "type": "Type",
+        "actions": "Actions"
+      },
+      "emptyMessage": "No contact type found.",
+      "loadingMessage": "Loading contact types data. Please wait.",
+      "unauthorized": "You are not authorized to perform actions!",
+      "deleteTooltip": "Delete",
+      "editTooltip": "Edit"
+    }
+  },
+    "add_title": "Add new specialty",
+    "modif_title": "Update new specialty",
+    "add_success": "New specialty added successfully",
+    "add_error": "Error while adding new specialty",
+    "fields": {
+      "type": "New specialty"
+    },
+    "placeholders": {
+      "type": "Type the new specialty"
+    },
+    "buttons": {
+      "add": "Add New Specialty",
+      "edit": "Edit Specialty",
+      "cancel": "Cancel"
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalid_contact_info": "Invalid contact information format"
+    },
+    "delete": {
+    "confirmation": {
+      "message": "Do you really want to delete this contact type?",
+      "header": "Delete confirmation",
+      "acceptLabel": "Yes",
+      "rejectLabel": "No"
+    },
+    "messages": {
+      "success": "Contact type deleted successfully",
+      "error": "An error occurred while deleting the contact type",
+      "canceled": "Deletion canceled"
+    }
+  }
+  }
+  ,
+    "Lieu": {
+      "number_lieu":"Number place",
+      "Table": {
+        "title": "Places List",
+        "columns": {
+          "id": "ID",
+          "nom": "Name",
+          "ville": "City",
+          "codePostal": "Postal Code",
+          "type": "Type",
+          "capaciteMax": "Capacity",
+          "actions": "Actions"
+        },
+        "filters": {
+          "search": "Search...",
+          "searchById": "Search by ID",
+          "searchByName": "Search by name",
+          "searchByCity": "Search by city",
+          "searchByPostalCode": "Search by postal code",
+          "searchByType": "Search by type",
+          "filterByCapacity": "Filter by capacity"
+        },
+        "buttons": {
+          "clear": "Clear",
+          "excel": "Excel",
+          "pdf": "PDF",
+          "csv": "CSV",
+          "delete": "Delete",
+          "edit": "Edit",
+          "details": "Details"
+        },
+        "messages": {
+          "noData": "No places found",
+          "loading": "Loading places data. Please wait.",
+          "unauthorized": "You are not authorized to perform actions!"
+        }
+      },
+      "list_lieu":"List place",
+      "add_title": "Add new place",
+      "add_success": "New place added successfully",
+      "add_error": "Error while adding new place",
+      "fields": {
+        "nom": "Place name",
+        "adresse": "Address",
+        "ville": "City",
+        "codePostal": "Postal code",
+        "type": "Place type",
+        "capaciteMax": "Maximum capacity",
+        "longueur": "longueur en mètres",
+        "largeur":"largeur en mètres",
+
+        "installations": "Installation",
+        "parentLieuId": "Parent place",
+        "estimationencours":"Loading estimation...",
+        "dimensionsestime":"estimed dimensions "
+      },
+      "placeholders": {
+        "nom": "Enter place name",
+        "adresse": "Enter address",
+        "ville": "Enter city",
+        "codePostal": "Enter postal code",
+        "type": "Select type",
+        "capaciteMax": "Enter capacity",
+       "longueur": "longueur en mètres",
+        "largeur":"largeur en mètres",
+        "installations": "Describe installation",
+        "parentLieuId": "Select parent place"
+      },
+      "buttons": {
+        "add": "Add Place",
+        "cancel": "Cancel",
+        "edit":"Edit"
+      },
+      "validation": {
+        "required": "This field is required",
+        "invalid_format": "Invalid format"
+      },
+      "types": {
+        "Ecurie": "Stable",
+        "Paddock": "Paddock",
+        "Manege": "Riding arena",
+        "Carriere": "Training area",
+        "Hangar": "Barn",
+        "Bureau": "Office"
+      }
+      ,
+      "deleteConfirmation": "Are you sure you want to delete this place?",
+      "deleteConfirmationHeader": "Delete Confirmation",
+      "deleteSuccess": "Place deleted successfully",
+      "deleteError": "Error while deleting place",
+      "deleteCancelled": "Deletion cancelled",
+      "ajoutSuccess": "Place added successfully",
+      "ajoutError": "Error while adding place",
+      "ajoutCancelled": "Add place cancelled",
+      "modifTitle": "Edit Place",
+      "modifSuccess": "Place updated successfully",
+      "modifError": "Error while updating place",
+      "modifCancelled": "Update cancelled",
+      "modifConfirmation": "Are you sure you want to save these changes?",
+      "modifConfirmationHeader": "Update Confirmation",
+
+      "Common": {
+                "yes": "Yes",
+                "no": "No"
+            
+                }
+    ,
+    "details": {
+    "title": "Place Details",
+    "sections": {
+      "basicInfo": "Basic Information",
+      "location": "Location"
+    },
+    "fields": {
+      "name": "Name",
+      "type": "Type",
+      "capacity": "Capacity",
+      "dimensions": "Dimensions",
+      "facilities": "Facilities",
+      "address": "Address",
+      "city": "City",
+      "postalCode": "Postal Code",
+      "parentPlace": "Parent Place"
+    },
+    "notSpecified": "Not specified",
+    "none": "None",
+    "buttons": {
+      "close": "Close"
+    }
+  }
+              }
+  ,
+  "Race": {
+    "number_race":"Number races",
+  "list_title": "List of Races",
+  "buttons": {
+    "add_race": "Add Race",
+    "add_horse": "Add Horse",
+    "clear": "Clear",
+    "excel": "Excel",
+    "pdf": "PDF",
+    "csv": "CSV",
+    "delete": "Delete",
+    "edit": "Edit"
+  },
+  "table": {
+    "columns": {
+      "id": "ID",
+      "type": "Type",
+      "actions": "Actions"
+    },
+    "filters": {
+      "search": "Search...",
+      "search_by_id": "Search by ID",
+      "search_by_type": "Search by type"
+    },
+    "messages": {
+      "no_data": "No races found",
+      "loading": "Loading race data. Please wait.",
+      "unauthorized": "You are not authorized to perform actions!"
+    }
+  },
+  "add_race": {
+    "title": "Add Race",
+    "fields": {
+      "race": "Race"
+    },
+    "placeholders": {
+      "race": "Enter the race"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "add": "Add"
+    },
+    "added":
+    {
+      "success":"New race added successfully",
+      "error":"Error while adding race "
+    }
+  },
+  "edit_race": {
+    "title": "Edit Race",
+    "fields": {
+      "race": "Race"
+    },
+    "placeholders": {
+      "race": "Enter the race"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "update": "Update"
+    },
+    "messages": {
+      "success": "Race updated successfully",
+      "error": "Error while updating race"
+    }
+  },
+  "delete_race": {
+    "confirmation": {
+      "message": "Are you sure you want to delete this race?",
+      "header": "Delete Confirmation"
+    },
+    "buttons": {
+      "accept": "Yes",
+      "reject": "No"
+    },
+    "messages": {
+      "success": "Race deleted successfully",
+      "error": "Error while deleting race",
+      "cancelled": "Deletion cancelled"
+    }
+  },
+  "Success": "Success",
+  "Error": "Error",
+  "Cancelled": "Cancelled"
+},
+"categorie": {
+  "title":"List of category",
+  "number_categorie":" Number of category",
+  "add_title":"Add new category",
+  "edit_title":"Edit category",
+  "table": {
+    "buttons": {
+      "clear": "Clear",
+      "excel": "Excel",
+      "pdf": "PDF",
+      "csv": "CSV"
+    },
+    "columns": {
+      "id": "ID",
+      "nameFr": "Name (FR)",
+      "nameEn": "Name (EN)",
+      "isPublic": "Is Public",
+      "addDate": "Add Date",
+      "actions": "Actions"
+    },
+    "filters": {
+      "search": "Search...",
+      "byId": "Search by ID",
+      "byNameFr": "Search by French name",
+      "byNameEn": "Search by English name",
+      "byStatus": "Filter by status",
+      "byDate": "Search by date"
+    },
+    "status": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "messages": {
+      "empty": "No categories found",
+      "loading": "Loading categories data. Please wait.",
+      "unauthorized": "You are not authorized to perform actions!"
+    }
+  },
+  "AddcategoryDialog": {
+      "header": "Add Category",
+      "headeredit": "Edit Category",
+      "fields": {
+        "nameFr": {
+          "label": "Name in French",
+          "placeholder": "Enter name in French"
+        },
+        "nameEn": {
+          "label": "Name in English",
+          "placeholder": "Enter name in English"
+        },
+        "parent": {
+          "label": "Parent Category",
+          "placeholder": "Choose parent"
+        },
+        "subcategories": {
+          "label": "Subcategories",
+          "placeholder": "Choose subcategories"
+        },
+        "isPublic": {
+          "label": "Is Public?",
+          "placeholder": "Select",
+          "options": {
+            "yes": "Yes",
+            "no": "No"
+          }
+        }
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "submit": "Add",
+        "edit":"Edit"
+      }
+    }
+},
+
+  "ordonnance": {
+    "number_ordonnance":"Number of prescription",
+    "messages": {
+      "success": {
+        "add": "Prescription added successfully",
+        "update": "Prescription updated successfully",
+        "delete": "Prescription deleted successfully"
+      },
+      "error": {
+        "add": "Error adding prescription",
+        "update": "Error updating prescription",
+        "delete": "Error deleting prescription",
+        "generic": "An error occurred"
+      }
+    },
+    "title_component":"List of Prescription",
+    "dialog": {
+      "addTitle": "Add Prescription",
+      "editTitle": "Edit Prescription",
+      "fields": {
+        "horses": {
+          "label": "Non-archived horse names",
+          "placeholder": "Select horses"
+        },
+        "date": {
+          "label": "Date"
+        },
+        "isSick": {
+          "label": "Is sick?",
+          "placeholder": "Select",
+          "options": {
+            "yes": "Yes",
+            "no": "No"
+          }
+        },
+        "symptoms": {
+          "label": "Symptoms",
+          "placeholder": "Select symptoms"
+        },
+        "disease": {
+          "label": "Disease name",
+          "placeholder": "Select the disease"
+        },
+        "medications": {
+          "label": "Medications"
+        }
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "submit": "Add"
+      }
+    },
+    "table": {
+      "buttons": {
+        "clear": "Clear",
+        "excel": "Excel",
+        "pdf": "PDF",
+        "csv": "CSV"
+      },
+      "columns": {
+        "id": "ID",
+        "isSick": "Is Sick",
+        "diseaseName": "Disease Name",
+        "symptoms": "Symptoms",
+        "medications": "Medications",
+        "horses": "Horses",
+        "date": "Date",
+        "actions": "Actions"
+      },
+      "filters": {
+        "search": "Search...",
+        "byId": "Search by ID",
+        "byDate": "Search by date"
+      },
+      "messages": {
+        "empty": "No horses found",
+        "loading": "Loading horse data. Please wait.",
+        "unauthorized": "You are not authorized to perform actions!"
+      }
+    },
+    "diseases": {
+      "Grippe équine": "Equine Flu",
+      "Rhinopneumonie": "Rhinopneumonitis",
+      "Tétanos": "Tetanus",
+      "Anémie infectieuse équine": "Equine Infectious Anemia",
+      "Artérite virale équine": "Equine Viral Arteritis",
+      "Piroplasmose": "Piroplasmosis",
+      "Lymphangite épizootique": "Epizootic Lymphangitis",
+      "Dermatophilose": "Dermatophilosis",
+      "Gourme": "Strangles",
+      "Fourbure": "Laminitis",
+      "Coliques": "Colic",
+      "Laminite": "Laminitis",
+      "Myopathie atypique": "Atypical Myopathy",
+      "Maladie de Lyme": "Lyme Disease",
+      "Leucose équine": "Equine Leukosis",
+      "Encéphalomyélite équine": "Equine Encephalomyelitis",
+      "Syndrome naviculaire": "Navicular Syndrome",
+      "Dermatite estivale récidivante": "Recurrent Summer Dermatitis",
+      "Paralysie à tiques": "Tick Paralysis"
+    },
+    "symptoms": {
+      "Fièvre": "Fever",
+      "Toux": "Cough",
+      "Écoulement nasal": "Nasal discharge",
+      "Difficulté respiratoire": "Breathing difficulty",
+      "Perte d'appétit": "Loss of appetite",
+      "Apathie": "Lethargy",
+      "Raideur musculaire": "Muscle stiffness",
+      "Spasmes musculaires": "Muscle spasms",
+      "Difficulté à avaler": "Difficulty swallowing",
+      "Jaunisse": "Jaundice",
+      "Urine foncée": "Dark urine",
+      "Gonflement des membres": "Limb swelling",
+      "Boiterie": "Lameness",
+      "Douleur articulaire": "Joint pain",
+      "Lésions cutanées": "Skin lesions",
+      "Démangeaisons intenses": "Intense itching",
+      "Écoulement oculaire": "Eye discharge",
+      "Diarrhée": "Diarrhea",
+      "Coliques": "Colic",
+      "Transpiration excessive": "Excessive sweating",
+      "Tremblements": "Tremors",
+      "Paralysie": "Paralysis",
+      "Perte de poids": "Weight loss",
+      "Œdème": "Edema",
+      "Saignements": "Bleeding",
+      "Douleur abdominale": "Abdominal pain",
+      "Déshydratation": "Dehydration",
+      "Faiblesse générale": "General weakness",
+      "Incoordination": "Incoordination",
+      "Convulsions": "Convulsions"
+    },
+    "status":{
+      "sick":"Yes",
+      "healthy":"No"
+    },
+    "delete_ordonnance": {
+      "confirmation": {
+        "message": "Do you really want to delete this prescription?",
+        "header": "Delete Confirmation",
+        "accept": "Yes",
+        "reject": "No"
+      },
+      "messages": {
+        "success": "Prescription deleted successfully",
+        "not_found": "The specified prescription doesn't exist",
+        "invalid_request": "Invalid request",
+        "generic_error": "Error deleting prescription",
+        "canceled": "Deletion canceled"
+      }
+    },
+    "update_ordonnance": {
+      "messages": {
+        "success": "Prescription updated successfully",
+        "generic_error": "Error updating prescription",
+        "invalid_sire": "No valid SIRE numbers found. Initialized to empty array."
+      }
+    },
+    "common": {
+    "success": "Success",
+    "error": "Error",
+    "canceled": "Canceled"
+  },
+  "EmailDialog": {
+        "header": "Send Prescription",
+        "fields": {
+            "recipients": "Recipients",
+            "subject": "Subject",
+            "message": "Message"
+        },
+        "placeholders": {
+            "recipients": "email1@example.com, email2@example.com",
+            "subject": "Prescription subject...",
+            "message": "Additional message..."
+        },
+        "buttons": {
+            "cancel": "Cancel",
+            "send": "Send"
+        },
+        "errors": {
+            "recipientsRequired": "At least one recipient is required"
+        },
+        "messages": {
+            "success": "Success",
+            "error": "Error",
+            "sentSuccessfully": "Prescription sent successfully",
+            "sendFailed": "Failed to send prescription"
+        }
+    }
+  },
+ "Acte":{
+  "number_acte":"Number acte",
+  "common": {
+    "success": "Success",
+    "error": "Error",
+    "canceled": "Canceled"
+  },
+  
+    "add_acte": {
+      "messages": {
+        "success": "Acte added successfully",
+        "generic_error": "Error adding Acte",
+        "invalid_sire": "empty array."
+      }
+    },
+    "add_analyse_sanitaire":{
+      "messages": {
+      
+        "success": "Health Analysis added successfully",
+        "generic_error": "Error adding  Health Analysis",
+        "invalid_sire": "empty array."
+      }
+    },
+    "add_planning":
+    {
+      "success": "Planning added successfully",
+      "generic_error": "Error adding  Planning",
+      "invalid_sire": "empty array."
+    }
+ },
+ "ConnectionError": {
+    "title": "No internet connection",
+    "message": "Unable to connect to the server. Please check your internet connection.",
+    "retryButton": "Retry"
+},
+"Login": {
+    "title": "Welcome",
+    "registerTitle": "Create Account",
+    "username": "Username",
+    "password": "Password",
+    "confirmpassword":"Confirm password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Login",
+    "toggleRegister": "Create an account",
+    "toggleLogin": "Back to login",
+    "register": {
+      "username": "Username",
+      "email": "Email",
+      "entity": "Entity",
+      "entityName": "Entity Name",
+      "entityDescription": "Entity Description",
+      "registerButton": "Create Account",
+      "registerWithEntityButton": "Create Account and Entity",
+      "condition": {
+  "hasLowercase": "At least one lowercase character",
+  "hasUppercase": "At least one uppercase character",
+  "hasSpecialChar": "At least one special character",
+  "hasNumber": "At least one number",
+  "hasMinLength": "Minimum 8 characters",
+  "identique": "Passwords match",
+  "messages":{
+    "promptLabel":"Choose a password",
+    "weakLabel":"Too simple",
+    "mediumLabel":"Average complexity",
+    "strongLabel":"Complex password"
+  } 
+}
+    },
+    "connection": {
+      "checking": "Checking connection...",
+      "errorTitle": "No internet connection",
+      "errorMessage": "Unable to connect to server. Please check your internet connection.",
+      "retry": "Retry"
+    },
+    "erreurmessagelogin":
+    {
+      "IC":"Invalid credentials!",
+      "IRD":"Invalid request data",
+      "AL":"Account locked. Try again at ",
+      "FA":"Too many failed attempts. Account locked for 5 minutes.",
+      "CE":"Please contact your administrator to confirm your email before logging in"
+    }
+  },
+  "ActeComponent": {
+    "table": {
+      "title": "List of Acts",
+      "buttons": {
+        "add_acte": "Add Act",
+        "clear": "Clear",
+        "excel": "Export to Excel",
+        "pdf": "Export to PDF",
+        "csv": "Export to CSV"
+      },
+      "columns": {
+        "id": "ID",
+        "addDate": "Add Date",
+        "notes": "Notes",
+        "documentType": "Document Type",
+        "actions": "Actions"
+      },
+      "filters": {
+        "search": "Search...",
+        "byId": "Filter by ID",
+        "byDate": "Filter by date",
+        "byNotes": "Filter by notes",
+        "byType": "Filter by type"
+      },
+      "documentTypes": {
+        "healthAnalysis": "Health Analysis",
+        "planning": "Planning"
+      },
+      "messages": {
+        "empty": "No acts found",
+        "loading": "Loading acts..."
+      }
+    },
+    "buttons": {
+      "add_acte": "Add Act"
+    },
+    "EditDialog": {
+      "header": "Edit Document - ID: {id}",
+      "buttons": {
+        "edit": "Save Changes"
+      },
+      "succes":"Acte updated successefully",
+     "error":"Error while updating acte"
+    },
+    "AddDialog": {
+      "header": "Add New Document",
+      "buttons": {
+        "add": "Add Document"
+      },
+      "succes":"Acte added successefully",
+     "error":"Error while adding acte"
+    },
+    
+    "DetailsDialog": {
+        "header": "Act Details - ID: {{id}}",
+        "sections": {
+            "basicInfo": "Basic Information",
+            "attachments": "Attachments",
+            "horses": "Related Horses",
+            "healthAnalysis": "Health Analysis",
+            "planning": "Planning",
+            "contacts": "Related Contacts"
+        },
+        "fields": {
+            "addDate": "Add Date",
+            "documentType": "Document Type",
+            "notes": "Notes",
+            "horse": {
+                "sire": "SIRE Number",
+                "name": "Name",
+                "coat": "Coat",
+                "birthDate": "Birth Date"
+            },
+            "analysis": {
+                "type": "Analysis Type",
+                "result": "Result",
+                "date": "Analysis Date"
+            },
+            "planning": {
+                "viewType": "View Type",
+                "filters": "Filters",
+                "startDate": "Start Date",
+                "endDate": "End Date"
+            },
+            "contact": {
+                "name": "Name",
+                "coordinates": "Coordinates"
+            }
+        },
+        "buttons": {
+            "close": "Close",
+            "exportPDF": "Export to PDF"
+        }
+    },
+    "EmailDialog": {
+      "header": "Send Email",
+      "fields": {
+        "recipients": "Email Recipients ( the list of Email must be separated with ,",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "placeholders": {
+        "recipients": "email1@example.com, email2@example.com",
+        "subject": "Email subject...",
+        "message": "Optional message..."
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "send": "Send"
+      },
+      "errors": {
+        "recipientsRequired": "At least one recipient is required"
+      },
+      "successsend":"Email sended successfully",
+      "errorsend":"Email not sended "
+    }
+  },
+  "Dashboard": {
+    
+    "title": "Dashboard Analytics",
+    "horsesStatus": "Horses Status",
+    "entitiesDistribution": "Entities Distribution",
+    "actesRepartition": "Acts Distribution",
+    "totalActs": "Total acts",
+    "actsByMonth": "Acts by month",
+    "movementsQualifications": "Movements and Qualifications",
+    "selectYear": "Select year",
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "chartLabels": {
+      "archivedHorses": "Archived Horses",
+      "activeHorses": "Active Horses",
+      "horses": "Horses",
+      "contacts": "Contacts",
+      "races": "Races",
+      "categories": "Categories",
+      "locations": "Locations",
+      "healthAnalysis": "Health Analysis",
+      "plannings": "Plannings",
+      "movements": "Movements",
+      "qualifications": "Qualifications",
+       "actsInYear": "Acts in {{year}}",
+      "acts": "Acts"
+    },
+    "ordonnancesByMonth": "Prescriptions by Month",
+    "ordonnancesInYear": "Prescriptions in {{year}}",
+    "ordonnances": "Prescriptions",
+    "facturesByMonth":" Invoices per Month",
+    "facturesInYear": "Invoices in {{year}}",
+    "factures": "Invoices",
+    "facturesDetails": "Invoices details",
+    "montantHT": "Amount HT",
+    "montantTTC": "Amount TTC",
+    "acheteur": "Buyer",
+    "modePaiement": "Payment method"
+  },
+  "Users": {
+    "resendConfirmation": {
+      "success": "Confirmed Email resended successefully",
+      "error": "Error while resending Email confirmation"
+    },
+    "list_users":" List of users",
+    "number_user":"Number users",
+    "table": {"emailConfirmed": {
+        "true": "Confirmed",
+        "false": "Not confirmed"
+      },
+      "resendConfirmationTooltip": "Resend Email confirmation",
+      "clearButton": "Clear filters",
+      "export": {
+        "excel": "Excel",
+        "pdf": "PDF",
+        "csv": "CSV"
+      },
+      "searchPlaceholder": "Search users...",
+      "columns": {
+        "nom": "Last Name",
+        "prenom": "First Name",
+        "email": "Email",
+        "username": "Username",
+        "role": "Role",
+        "lastLogin": "Last Login",
+        "actions": "Actions"
+      },
+      "deleteTooltip": "Delete user",
+      "editTooltip": "Edit user",
+      "changeRoleTooltip": "Change role",
+      "unauthorized": "Unauthorized",
+      "emptyMessage": "No users found",
+      "loadingMessage": "Loading users..."
+    },
+    
+    "add": {
+      "title": "Add User",
+      "success": "Success",
+      "successDetail": "User created successfully",
+      "error": "Error",
+      "roleError": "Role assignment error",
+      "passwordMismatch": "Password error",
+      "passwordMismatchDetail": "Passwords do not match"
+    },
+    "fields": {
+      "nom": "Last Name",
+      "prenom": "First Name",
+      "email": "Email",
+      "username": "Username",
+      "role": "Role",
+      "password": "Password",
+      "confirmpassword": "Confirm Password"
+    },
+    "placeholders": {
+      "nom": "Enter last name",
+      "prenom": "Enter first name",
+      "email": "Enter email",
+      "username": "Enter username",
+      "role": "Select a role",
+      "password": "Enter password",
+      "confirmpassword": "Confirm password"
+    },
+    "buttons": {
+      "add": "Add",
+      "cancel": "Cancel"
+    },
+    "update": {
+    "title": "Update User",
+    "fillAllFields": "Please fill all required fields",
+    "success": "User updated successfully",
+    "error": "Failed to update user",
+    "fields": {
+      "currentPassword": "Current Password",
+      "newPassword": "New Password"
+    },
+    "placeholders": {
+      "currentPassword": "Enter current password",
+      "newPassword": "Enter new password"
+    },
+    "buttons": {
+      "update": "Update"
+    },
+    "passwordRequirements": {
+      "lowercase": "Lowercase",
+      "uppercase": "Uppercase",
+      "number": "Number",
+      "specialChar": "Special character",
+      "minLength": "Minimum 8 characters"
+    }
+  },
+  "delete": {
+    "confirmationTitle": "Confirm Deletion",
+    "confirmationMessage": "Are you sure you want to delete this user?",
+    "successTitle": "Success",
+    "successMessage": "User deleted successfully",
+    "errorTitle": "Error",
+    "errorMessage": "Failed to delete user",
+    "cannotDeleteSelf": "You cannot delete your own account"
+  },
+  "Common":
+  {
+    "yes":"Yes",
+    "no":"No",
+    "warning":"warning"
+  },
+  "changeRole": {
+    "title": "Change User Role",
+    "cannotChangeOwnRole": "You cannot change your own role",
+    "noChange": "Please select a different role",
+    "success": "Role changed successfully",
+    "error": "Failed to change role",
+    "fields": {
+      "currentRole": "Current Role",
+      "newRole": "New Role"
+    },
+    "placeholders": {
+      "selectRole": "Select a role"
+    },
+    "buttons": {
+      "assign": "Assign"
+    }
+  }
+  }
+}

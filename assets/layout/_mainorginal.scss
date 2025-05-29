@@ -1,0 +1,158 @@
+.layout-main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    padding: 6rem 2rem 0 2rem;
+    transition: margin-left var(--layout-section-transition-duration);
+}
+
+.layout-main {
+    flex: 1 1 auto;
+    padding-bottom: 2rem;
+}
+.button-spacing {
+    margin-right: 10px;
+}
+.p-field {
+margin-bottom: 1.5rem;
+}
+
+.p-field label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: bold;
+color: #333;
+}
+
+.p-field input,
+.p-field p-dropdown,
+.p-field p-calendar,
+.p-field p-multiSelect {
+width: 100%;
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 1rem;
+}
+
+.p-field input:focus,
+.p-field p-dropdown:focus,
+.p-field p-calendar:focus,
+.p-field p-multiSelect:focus {
+border-color: #007bff;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.p-dialog-footer {
+display: flex;
+justify-content: flex-end;
+gap: 0.5rem;
+margin-top: 1.5rem;
+}
+
+.p-button {
+padding: 0.5rem 1rem;
+font-size: 1rem;
+border-radius: 4px;
+}
+
+.p-button-text {
+background-color: transparent;
+color: #007bff;
+border: none;
+}
+
+.p-button-text:hover {
+background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Styles pour le calendrier */
+.p-calendar .p-inputtext {
+width: 100%;
+}
+
+/* Styles pour le dropdown */
+.p-dropdown {
+width: 100%;
+}
+
+/* Styles pour le multiSelect */
+.p-multiselect {
+width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.p-col-12.p-md-6 {
+    width: 100%;
+}
+}
+.custom-calendar .p-calendar {
+    width: 100%;
+}
+/* styles.css */
+/*.p-toast .p-toast-message-success {
+background-color: #d4edda;
+border-color: #c3e6cb;
+color: #155724;
+}
+
+.p-toast .p-toast-message-error {
+background-color: #f8d7da;
+border-color: #f5c6cb;
+color: #721c24;
+}*/
+.p-button-danger {
+background-color: #dc3545 !important;
+border-color: #dc3545 !important;
+}
+
+.p-button-warning {
+background-color: #ffc107 !important;
+border-color: #ffc107 !important;
+}
+
+.p-button-secondary {
+background-color: #6c757d !important;
+border-color: #6c757d !important;
+}
+
+.p-button-info {
+background-color: #17a2b8 !important;
+border-color: #17a2b8 !important;
+}
+
+.p-button-success {
+background-color: #28a745 !important;
+border-color: #28a745 !important;
+}
+
+.p-button-text {
+background-color: transparent !important;
+border: none !important;
+}
+
+.p-button-icon-only {
+padding: 0.5rem !important;
+}
+.p-field textarea {
+width: 100%;
+min-height: 100px;
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 1rem;
+}
+
+.p-field textarea:focus {
+border-color: #007bff;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.custom-spacing .p-col-6 {
+padding-right: 0.5rem; /* Espace à droite */
+}
+
+.custom-spacing .p-col-6:last-child {
+padding-right: 0; /* Pas d'espace à droite pour le dernier élément */
+}

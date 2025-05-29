@@ -1,0 +1,4 @@
+NumeroSIRE,Robe,Nom,CleSIRE,DateDeNaissance,Sexe,LieuId,RaceCodeRace,CategoriesId,PereId,MereId,EntiteId,ContactIds
+9876543213,Blanc,Cheval3,DEF456,2019-05-15,F,1,1,1,,,1,1
+98765432143,Blanc,Cheval4,DEF456,2019-05-15,F,2,1,1,,,1,1
+98765438213,Blanc,Cheval5,DEF456,2019-05-15,F,1,1,1,,,1,1

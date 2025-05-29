@@ -1,0 +1,64 @@
+/* Utils */
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: var(--content-border-radius);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.p-toast {
+    &.p-toast-top-right,
+    &.p-toast-top-left,
+    &.p-toast-top-center {
+        top: 100px;
+    }
+}
+  
+    /* Freeze the last column (actions) */
+    :host ::ng-deep .sticky-column-table .p-datatable-thead > tr > th:last-child,
+    :host ::ng-deep .sticky-column-table .p-datatable-tbody > tr > td:last-child {
+      position: sticky;
+      right: 0;
+      background: inherit;
+      z-index: 1;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Header specific styling */
+    :host ::ng-deep .sticky-column-table .p-datatable-thead > tr > th:last-child {
+      background: #19bc86; /* Match your header background */
+    }
+    
+    /* Dark mode support */
+    .dark :host ::ng-deep .sticky-column-table .p-datatable-thead > tr > th:last-child {
+      background: var(--surface-d);
+    }
+    
+    /* Ensure table has horizontal scrolling */
+    :host ::ng-deep .sticky-column-table .p-datatable-wrapper {
+      overflow-x: auto;
+      position: relative;
+    }
+    
+    /* Fix for frozen column content */
+    :host ::ng-deep .sticky-column-table .p-datatable-tbody > tr > td:last-child {
+      white-space: nowrap;
+    }
+    /* For RTL languages */
+    :host-context([dir="rtl"]) ::ng-deep .sticky-column-table .p-datatable-thead > tr > th:last-child,
+    :host-context([dir="rtl"]) ::ng-deep .sticky-column-table .p-datatable-tbody > tr > td:last-child {
+      right: auto;
+      left: 0;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    

@@ -1,0 +1,258 @@
+.layout-main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    padding: 6rem 2rem 0 2rem;
+    transition: margin-left var(--layout-section-transition-duration);
+    
+    [dir="rtl"] & {
+        transition: margin-right var(--layout-section-transition-duration);
+    }
+}
+
+.layout-main {
+    flex: 1 1 auto;
+    padding-bottom: 2rem;
+}
+
+.button-spacing {
+    margin-right: 10px;
+    
+    [dir="rtl"] & {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+
+.p-field {
+    margin-bottom: 1.5rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #333;
+        
+        [dir="rtl"] & {
+            text-align: right;
+        }
+    }
+
+    input,
+    p-dropdown,
+    p-calendar,
+    p-multiSelect {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        
+        [dir="rtl"] & {
+            text-align: right;
+        }
+    }
+
+    input:focus,
+    p-dropdown:focus,
+    p-calendar:focus,
+    p-multiSelect:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+}
+
+.p-dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    
+    [dir="rtl"] & {
+        justify-content: flex-start;
+    }
+}
+
+.p-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.p-button-text {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+}
+
+.p-button-text:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Calendar styles */
+.p-calendar .p-inputtext {
+    width: 100%;
+    
+    [dir="rtl"] & {
+        text-align: right;
+    }
+}
+
+/* Dropdown styles */
+.p-dropdown {
+    width: 100%;
+    
+    [dir="rtl"] & {
+        .p-dropdown-label {
+            text-align: right;
+        }
+    }
+}
+
+/* MultiSelect styles */
+.p-multiselect {
+    width: 100%;
+    
+    [dir="rtl"] & {
+        .p-multiselect-label {
+            text-align: right;
+        }
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .p-col-12.p-md-6 {
+        width: 100%;
+    }
+}
+
+.custom-calendar .p-calendar {
+    width: 100%;
+}
+
+/* Button variants */
+.p-button-danger {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.p-button-warning {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.p-button-secondary {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+}
+
+.p-button-info {
+    background-color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+}
+
+.p-button-success {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+}
+
+.p-button-text {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.p-button-icon-only {
+    padding: 0.5rem !important;
+}
+
+.p-field textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    
+    [dir="rtl"] & {
+        text-align: right;
+    }
+}
+
+.p-field textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.custom-spacing .p-col-6 {
+    padding-right: 0.5rem;
+    
+    [dir="rtl"] & {
+        padding-right: 0;
+        padding-left: 0.5rem;
+    }
+}
+
+.custom-spacing .p-col-6:last-child {
+    padding-right: 0;
+    
+    [dir="rtl"] & {
+        padding-left: 0;
+    }
+}
+   /* Pour le composant p-chip */
+   .cheval-chip .p-chip-text {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.3); /* Couleur discrète pour le soulignement */
+    transition: text-decoration-color 0.2s;
+  }
+  
+  /* Effet au survol */
+  .cheval-chip:hover .p-chip-text {
+    text-decoration-color: rgba(0, 0, 0, 0.7); /* Soulignement plus visible au survol */
+    color: var(--primary-color); /* Change la couleur au survol (optionnel) */
+  }
+  .cheval-chip {
+    transition: all 0.2s ease;
+  }
+  
+  .cheval-chip:hover {
+    transform: translateY(-1px); /* Léger effet de "levage" au survol */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  }
+  /* Style global pour tous les p-chip avec comportement de lien */
+  p-chip {
+    cursor: pointer;
+  }
+  
+  p-chip .p-chip-text {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+  }
+  
+  p-chip:hover .p-chip-text {
+    text-decoration-color: rgba(0, 0, 0, 0.7);
+    color: var(--primary-color);
+  }
+  
+  .archived-chip {
+     
+      text-decoration: line-through; /* Barré */
+  }
+  
+  .archived-chip .p-chip-text {
+      cursor: pointer;
+      text-decoration: line-through;
+     
+  }
+  
+  /* Style pour les chips au survol */
+  .archived-chip:hover {
+    
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+ 

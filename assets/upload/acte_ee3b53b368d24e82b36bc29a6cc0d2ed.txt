@@ -1,0 +1,212 @@
+@startuml
+
+' Classes
+class Entité {
+    + Id: int
+    + Nom: string
+    + Description: string
+    + Date_ajout: DateTime
+    + Chevaux: ICollection<Cheval>
+    + Actes: ICollection<Acte>
+    + Contacts: ICollection<Contact>
+    + Lieux: ICollection<Lieu>
+    + Categories: ICollection<Categorie>
+    + Races: ICollection<Race>
+}
+
+class Cheval {
+    + Id: int
+    + NumeroSIRE: string
+    + Nom: string
+    + Robe: string
+    + CleSIRE: string
+    + DateDeNaissance: DateTime
+    + Sexe: string
+    + Archived: bool
+    + LieuId: int
+    + RaceCodeRace: int
+    + CategoriesId: int
+    + PereId: string?
+    + MereId: string?
+    + EntiteId: int
+    + AnciensNoms: ICollection<AncienNom>
+    + Chevalordonnances: ICollection<Chevalordonnance>
+    + Race: Race
+    + Lieu: Lieu
+    + Categories: Categorie
+    + ChevalContacts: ICollection<ChevalContact>
+    + Actes: ICollection<Acte>
+    + ChevalActes: ICollection<ChevalActe>
+    + Qualifications: ICollection<Qualification>
+    + Pere: Cheval?
+    + Mere: Cheval?
+    + Entite: Entité
+}
+
+class Acte {
+    + Id: int
+    + Date_ajout: DateTime
+    + Notes: string
+    + PiecesJointes: string
+    + TypeActeId: int
+    + EntiteId: int
+    + TypeActe: TypeActe
+    + Entite: Entité
+    + ActeContacts: ICollection<ActeContact>
+    + ChevauxActes: ICollection<ChevalActe>
+    + AnalysesSanitaires: ICollection<AnalyseSanitaire>
+    + Planning: ICollection<Planning>
+}
+
+class Contact {
+    + Id: int
+    + Nom: string
+    + Prenom: string
+    + Coordonnees: string
+    + Historique: string
+    + Date_ajout: DateTime
+    + EntiteId: int
+    + ContactType: ContactType
+    + Entite: Entité
+}
+
+class Lieu {
+    + Id: int
+    + Nom: string
+    + Adresse: string
+    + CodePostal: string
+    + Ville: string
+    + Type: string
+    + CapaciteMax: int
+    + Dimensions: string
+    + Installations: string
+    + ParentLieuId: int?
+    + ParentLieu: Lieu?
+    + Date_ajout: DateTime
+    + EntiteId: int
+    + Chevaux: ICollection<Cheval>
+    + MouvementsDepart: ICollection<Mouvement>
+    + MouvementsArrivee: ICollection<Mouvement>
+    + QualificationsDepart: ICollection<Qualification>
+    + QualificationsArrivee: ICollection<Qualification>
+    + Entite: Entité
+}
+
+class Qualification {
+    + Id: int
+    + IdentifiantUnique: string
+    + Nom: string
+    + NumeroSIRE: string
+    + Cheval: Cheval
+    + LieuDepartId: int
+    + LieuDepart: Lieu
+    + LieuArriveeId: int
+    + LieuArrivee: Lieu
+    + Distance: double
+    + DateQualificationDepart: DateTime
+    + DateQualificationFin: DateTime
+    + Rang: int
+    + NombrePremierRang: int
+    + NombreDeuxiemeRang: int
+    + NombreTroisiemeRang: int
+}
+
+class Mouvement {
+    + Id: int
+    + Transporteur: string
+    + DateHeureDepart: DateTime
+    + DateHeureArrivee: DateTime
+    + Conditions: string
+    + LieuDepartId: int
+    + LieuArriveeId: int
+    + LieuDepart: Lieu
+    + LieuArrivee: Lieu
+    + Cheval: Cheval
+}
+
+class Categorie {
+    + Id: int
+    + NomFr: string
+    + NomEn: string
+    + EstPublique: bool
+    + ParentId: int?
+    + EntiteId: int
+    + Date_ajout: DateTime
+    + Parent: Categorie?
+    + SousCategories: ICollection<Categorie>
+    + ChevalCategories: ICollection<ChevalCategorie>
+    + Entite: Entité
+}
+
+class ChevalCategorie {
+    + NumeroSIRE: string
+    + CategorieId: int
+    + Cheval: Cheval
+    + Categorie: Categorie
+}
+
+class Race {
+    + CodeRace: int
+    + Description: string
+    + Date_ajout: DateTime
+    + EntiteId: int
+    + Chevaux: ICollection<Cheval>
+    + Entite: Entité
+}
+
+class User {
+    + Id: string
+    + UserName: string
+    + Email: string
+    + LastLogin: DateTime
+}
+
+' Relations
+Entité "1" -- "*" Cheval : contient >
+Entité "1" -- "*" Acte : contient >
+Entité "1" -- "*" Contact : contient >
+Entité "1" -- "*" Lieu : contient >
+Entité "1" -- "*" Categorie : contient >
+Entité "1" -- "*" Race : contient >
+
+Cheval "1" -- "*" AncienNom : a >
+Cheval "1" -- "*" ChevalContact : a >
+Cheval "1" -- "*" Chevalordonnance : a >
+Cheval "1" -- "*" ChevalActe : a >
+Cheval "1" -- "*" Qualification : a >
+Cheval "1" -- "1" Race : appartient à >
+Cheval "1" -- "1" Lieu : appartient à >
+Cheval "1" -- "1" Categorie : appartient à >
+Cheval "1" -- "1" Entité : appartient à >
+
+Acte "1" -- "1" TypeActe : a >
+Acte "1" -- "1" Entité : appartient à >
+Acte "1" -- "*" ActeContact : a >
+Acte "1" -- "*" ChevalActe : a >
+Acte "1" -- "*" AnalyseSanitaire : a >
+Acte "1" -- "*" Planning : a >
+
+Contact "1" -- "1" ContactType : a >
+Contact "1" -- "1" Entité : appartient à >
+
+Lieu "1" -- "*" Mouvement : a >
+Lieu "1" -- "*" Qualification : a >
+
+Qualification "1" -- "1" Cheval : concerne >
+Qualification "1" -- "1" LieuDepart : départ >
+Qualification "1" -- "1" LieuArrivee : arrivée >
+
+Mouvement "1" -- "1" LieuDepart : départ >
+Mouvement "1" -- "1" LieuArrivee : arrivée >
+Mouvement "1" -- "1" Cheval : concerne >
+
+Categorie "1" -- "*" ChevalCategorie : a >
+Categorie "1" -- "1" Entité : appartient à >
+
+ChevalCategorie "1" -- "1" Cheval : concerne >
+ChevalCategorie "1" -- "1" Categorie : concerne >
+
+Race "1" -- "*" Cheval : a >
+Race "1" -- "1" Entité : appartient à >
+
+@enduml
